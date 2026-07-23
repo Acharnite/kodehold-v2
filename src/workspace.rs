@@ -86,7 +86,16 @@ impl Workspace {
 
         // Run pipeline commands
         for cmd in &self.config.pipeline.verify {
-            results.push(run_cmd(cmd, &self.root));
+            let result = crate::util::run_cmd(cmd, &self.root);
+            results.push(CheckResult {
+                name: result.name,
+                status: match result.status {
+                    crate::util::CmdStatus::Ok => CheckStatus::Pass,
+                    crate::util::CmdStatus::Warn => CheckStatus::Warn,
+                    crate::util::CmdStatus::Fail => CheckStatus::Fail,
+                },
+                message: result.message,
+            });
         }
 
         Ok(results)
@@ -186,25 +195,6 @@ pub struct ShipResult {
     pub changelog: String,
 }
 
-fn run_cmd(cmd: &str, cwd: &std::path::Path) -> CheckResult {
-    let name = cmd.split_whitespace().next().unwrap_or(cmd).to_string();
-    let output = std::process::Command::new("sh")
-        .arg("-c")
-        .arg(cmd)
-        .current_dir(cwd)
-        .output();
-    match output {
-        Ok(out) if out.status.success() => {
-            CheckResult::pass(name, "passed")
-        }
-        Ok(out) => {
-            let stderr = String::from_utf8_lossy(&out.stderr);
-            CheckResult::fail(name, format!("exit code {}: {}", out.status.code().unwrap_or(-1), truncate(&stderr, 200)))
-        }
-        Err(e) => CheckResult::fail(name, format!("failed to execute: {e}")),
-    }
-}
-
 fn generate_changelog(repo_path: &Path, since_tag: Option<&str>) -> anyhow::Result<String> {
     let repo = git2::Repository::open(repo_path)?;
 
@@ -236,13 +226,6 @@ fn generate_changelog(repo_path: &Path, since_tag: Option<&str>) -> anyhow::Resu
     }
 }
 
-fn truncate(s: &str, max: usize) -> String {
-    if s.len() <= max {
-        s.to_string()
-    } else {
-        format!("{}...", &s[..max])
-    }
-}
 
 fn find_project_root(path: &Path) -> anyhow::Result<PathBuf> {
     let mut current = Some(path.to_path_buf());

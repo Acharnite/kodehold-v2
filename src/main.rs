@@ -3,7 +3,10 @@ use clap::Parser;
 mod cli;
 mod cmd;
 mod config;
+mod pipeline;
+mod solver;
 mod state;
+mod util;
 mod workspace;
 
 fn main() {
@@ -13,6 +16,8 @@ fn main() {
         cli::Command::Verify(cmd) => cmd::verify::run(cmd),
         cli::Command::Ship(cmd) => cmd::ship::run(cmd),
         cli::Command::State(cmd) => cmd::state::run(cmd),
+        cli::Command::Pipeline(cmd) => cmd::pipeline::run(cmd),
+        cli::Command::Pattern(cmd) => cmd::pattern::run(cmd),
     };
     if let Err(e) = result {
         eprintln!("error: {e}");

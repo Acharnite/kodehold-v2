@@ -11,29 +11,39 @@ pub struct Config {
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct PipelineConfig {
+    /// Ordered list of pipeline phases to run
+    #[serde(default = "default_phases")]
+    pub phases: Vec<String>,
+    /// Commands for the verify phase
+    #[serde(default)]
     pub verify: Vec<String>,
+    /// Commands for the optimize phase
+    #[serde(default)]
     pub optimize: Vec<String>,
+}
+
+fn default_phases() -> Vec<String> {
+    vec![
+        "parse".into(),
+        "analyze".into(),
+        "generate".into(),
+        "verify".into(),
+        "optimize".into(),
+    ]
 }
 
 impl Config {
     pub fn default_for(name: &str, language: Option<&str>) -> Self {
         let lang = language.unwrap_or("rust").to_string();
-        let (verify, optimize) = match lang.as_str() {
-            "rust" => (
-                vec![],
-                vec![],
-            ),
-            "python" => (
-                vec![],
-                vec![],
-            ),
-            _ => (vec![], vec![]),
-        };
         Self {
             version: "0.1.0".into(),
             name: name.into(),
             language: lang,
-            pipeline: PipelineConfig { verify, optimize },
+            pipeline: PipelineConfig {
+                phases: default_phases(),
+                verify: vec![],
+                optimize: vec![],
+            },
         }
     }
 

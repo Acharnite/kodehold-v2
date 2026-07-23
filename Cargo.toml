@@ -1,6 +1,6 @@
 [package]
 name = "kodehold"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "KodeHold v2.0 — code specification and generation tool"
 
@@ -13,6 +13,7 @@ anyhow = "1"
 semver = "1"
 git2 = "0.19"
 chrono = { version = "0.4", features = ["serde"] }
+uuid = { version = "1", features = ["v4"] }
 
 [dev-dependencies]
 assert_cmd = "2"

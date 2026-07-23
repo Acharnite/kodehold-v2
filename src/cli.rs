@@ -17,13 +17,81 @@ pub enum Command {
     Ship(ShipArgs),
     /// Show workspace state from git tags
     State(StateArgs),
+    /// Run the full compilation pipeline
+    Pipeline(PipelineArgs),
+    /// Manage the pattern database
+    Pattern(PatternArgs),
 }
 
 #[derive(clap::Args)]
 pub struct InitArgs {
-    /// Project name
     pub name: String,
-    /// Project language (auto-detect if not set)
+    #[arg(short, long)]
+    pub language: Option<String>,
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct VerifyArgs {
+    #[arg(short, long)]
+    pub path: Option<String>,
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct ShipArgs {
+    #[arg(short, long)]
+    pub bump: Option<String>,
+    #[arg(short, long)]
+    pub path: Option<String>,
+    #[arg(long)]
+    pub no_push: bool,
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct StateArgs {
+    #[arg(short, long)]
+    pub path: Option<String>,
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct PipelineArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short = 'P', long)]
+    pub path: Option<String>,
+    /// Run only specific phases (comma-separated: parse,analyze,generate,verify,optimize)
+    #[arg(short = 'f', long = "phases")]
+    pub phases: Option<String>,
+    /// Output as JSON
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct PatternArgs {
+    #[command(subcommand)]
+    pub command: PatternCommand,
+}
+
+#[derive(Subcommand)]
+pub enum PatternCommand {
+    /// List all patterns in the database
+    List(PatternListArgs),
+    /// Search patterns by query
+    Search(PatternSearchArgs),
+    /// Add a pattern from a JSON file
+    Add(PatternAddArgs),
+}
+
+#[derive(clap::Args)]
+pub struct PatternListArgs {
+    /// Language filter
     #[arg(short, long)]
     pub language: Option<String>,
     /// Output as JSON
@@ -32,37 +100,18 @@ pub struct InitArgs {
 }
 
 #[derive(clap::Args)]
-pub struct VerifyArgs {
-    /// Project path (defaults to current directory)
-    #[arg(short, long)]
-    pub path: Option<String>,
+pub struct PatternSearchArgs {
+    /// Search query (matches name, signature, tags)
+    pub query: String,
     /// Output as JSON
     #[arg(long)]
     pub json: bool,
 }
 
 #[derive(clap::Args)]
-pub struct ShipArgs {
-    /// Version bump type
-    #[arg(short, long)]
-    pub bump: Option<String>,
-    /// Project path (defaults to current directory)
-    #[arg(short, long)]
-    pub path: Option<String>,
-    /// Skip push
-    #[arg(long)]
-    pub no_push: bool,
-    /// Output as JSON
-    #[arg(long)]
-    pub json: bool,
-}
-
-#[derive(clap::Args)]
-pub struct StateArgs {
-    /// Project path (defaults to current directory)
-    #[arg(short, long)]
-    pub path: Option<String>,
-    /// Output as JSON
+pub struct PatternAddArgs {
+    /// Path to JSON pattern file
+    pub path: String,
     #[arg(long)]
     pub json: bool,
 }
