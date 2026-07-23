@@ -24,6 +24,8 @@ fn main() {
         cli::Command::Listen(cmd) => cmd::listen::run(cmd),
         cli::Command::Plugin(cmd) => cmd::plugin::run(cmd),
         cli::Command::Spec(cmd) => cmd::spec::run(cmd),
+        cli::Command::Migrate(cmd) => cmd::migrate::run_migrate(cmd),
+        cli::Command::Bridge(cmd) => cmd::migrate::run_bridge(cmd),
     };
     if let Err(e) = result {
         eprintln!("error: {e}");

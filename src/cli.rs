@@ -27,6 +27,10 @@ pub enum Command {
     Plugin(PluginArgs),
     /// Compile a .khold specification file
     Spec(SpecArgs),
+    /// Migrate from v1.0 or delegate to v1.0 tools
+    Migrate(MigrateArgs),
+    /// Bridge to v1.0 tools
+    Bridge(BridgeArgs),
 }
 
 #[derive(clap::Args)]
@@ -204,4 +208,38 @@ pub struct SpecArgs {
     /// Output as JSON
     #[arg(long)]
     pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct MigrateArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short, long)]
+    pub path: Option<String>,
+    /// Dry-run: show what would be migrated
+    #[arg(long)]
+    pub dry_run: bool,
+    /// Output as JSON
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct BridgeArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short, long)]
+    pub path: Option<String>,
+    /// Dry-run: show what would be run
+    #[arg(long)]
+    pub dry_run: bool,
+    #[command(subcommand)]
+    pub command: BridgeCommand,
+}
+
+#[derive(clap::Subcommand)]
+pub enum BridgeCommand {
+    /// Run a v1.0 gate transition
+    Gate {
+        /// Transition name (e.g., INIT_TO_ACTIVE)
+        transition: String,
+    },
 }
