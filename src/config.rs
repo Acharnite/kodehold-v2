@@ -7,17 +7,16 @@ pub struct Config {
     pub language: String,
     #[serde(default)]
     pub pipeline: PipelineConfig,
+    #[serde(default)]
+    pub hooks: crate::plugin::HookConfig,
 }
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
 pub struct PipelineConfig {
-    /// Ordered list of pipeline phases to run
     #[serde(default = "default_phases")]
     pub phases: Vec<String>,
-    /// Commands for the verify phase
     #[serde(default)]
     pub verify: Vec<String>,
-    /// Commands for the optimize phase
     #[serde(default)]
     pub optimize: Vec<String>,
 }
@@ -43,6 +42,11 @@ impl Config {
                 phases: default_phases(),
                 verify: vec![],
                 optimize: vec![],
+            },
+            hooks: crate::plugin::HookConfig {
+                pre_generate: None,
+                post_verify: None,
+                on_ship: None,
             },
         }
     }

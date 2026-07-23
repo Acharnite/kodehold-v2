@@ -23,6 +23,8 @@ pub enum Command {
     Pattern(PatternArgs),
     /// Start the event daemon (webhooks + file watcher)
     Listen(ListenArgs),
+    /// Manage workspace plugins and hooks
+    Plugin(PluginArgs),
 }
 
 #[derive(clap::Args)]
@@ -135,4 +137,57 @@ pub struct ListenArgs {
     /// Disable file watcher
     #[arg(long)]
     pub no_watch: bool,
+}
+
+#[derive(clap::Args)]
+pub struct PluginArgs {
+    #[command(subcommand)]
+    pub command: PluginCommand,
+}
+
+#[derive(Subcommand)]
+pub enum PluginCommand {
+    /// List configured hooks
+    List(PluginListArgs),
+    /// Run a specific hook
+    Run(PluginRunArgs),
+    /// Scaffold a new hook script
+    Init(PluginInitArgs),
+}
+
+#[derive(clap::Args)]
+pub struct PluginListArgs {
+    /// Project path
+    #[arg(short, long)]
+    pub path: Option<String>,
+    /// Output as JSON
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct PluginRunArgs {
+    /// Hook name or path to run
+    pub hook: String,
+    /// Project path
+    #[arg(short, long)]
+    pub path: Option<String>,
+    /// Output as JSON
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct PluginInitArgs {
+    /// Hook name (e.g., pre-generate, post-verify, on-ship)
+    pub name: String,
+    /// Script language (bash or python)
+    #[arg(short, long, default_value = "bash")]
+    pub language: Option<String>,
+    /// Project path
+    #[arg(short, long)]
+    pub path: Option<String>,
+    /// Output as JSON
+    #[arg(long)]
+    pub json: bool,
 }

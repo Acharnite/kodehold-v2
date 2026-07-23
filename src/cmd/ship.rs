@@ -3,6 +3,24 @@ use crate::workspace::Workspace;
 
 pub fn run(args: ShipArgs) -> anyhow::Result<()> {
     let ws = Workspace::open(args.path.as_deref())?;
+
+    // Run on-ship hook before shipping
+    let hooks = crate::plugin::HookConfig::from_config(&ws.config);
+    if let Some(ref path) = hooks.on_ship {
+        let result = crate::plugin::run_hook(&ws.root, path);
+        match result.status {
+            crate::plugin::HookStatus::Blocked => {
+                anyhow::bail!("on-ship hook blocked: {} ({})", result.hook, result.message);
+            }
+            _ => {
+                if !args.json {
+                    let icon = if result.status == crate::plugin::HookStatus::Ok { "✓" } else { "–" };
+                    println!("  {icon} hook {}: {}", result.hook, result.message);
+                }
+            }
+        }
+    }
+
     let result = ws.ship(args.bump.as_deref())?;
 
     if args.json {

@@ -84,12 +84,34 @@ impl Pipeline {
             self.config.pipeline.phases.clone()
         };
 
+        let hooks = crate::plugin::HookConfig::from_config(&self.config);
+
         for phase in &phases {
             match phase.as_str() {
                 "parse" => self.run_parse()?,
                 "analyze" => self.run_analyze()?,
-                "generate" => self.run_generate()?,
-                "verify" => self.run_verify()?,
+                "generate" => {
+                    // pre-generate hook
+                    if let Some(ref path) = hooks.pre_generate {
+                        let r = crate::plugin::run_hook(&self.workspace.root, path);
+                        if r.status == crate::plugin::HookStatus::Blocked {
+                            eprintln!("  ✗ hook blocked: {} ({})", r.hook, r.message);
+                            anyhow::bail!("hook blocked by {hook}", hook = r.hook);
+                        }
+                    }
+                    self.run_generate()?;
+                }
+                "verify" => {
+                    self.run_verify()?;
+                    // post-verify hook
+                    if let Some(ref path) = hooks.post_verify {
+                        let r = crate::plugin::run_hook(&self.workspace.root, path);
+                        if r.status == crate::plugin::HookStatus::Blocked {
+                            eprintln!("  ✗ hook blocked: {} ({})", r.hook, r.message);
+                            anyhow::bail!("hook blocked by {hook}", hook = r.hook);
+                        }
+                    }
+                }
                 "optimize" => self.run_optimize()?,
                 other => anyhow::bail!("Unknown pipeline phase: {other}"),
             }
