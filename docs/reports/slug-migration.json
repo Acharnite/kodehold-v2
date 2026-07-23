@@ -1,0 +1,3272 @@
+{
+  "timestamp": "20260602T205955Z",
+  "dry_run": false,
+  "summary": {
+    "total_processed": 469,
+    "actions_processed": 50,
+    "actions_updated": 28,
+    "actions_skipped": 22,
+    "actions_errored": 0,
+    "sessions_processed": 419,
+    "sessions_updated": 341,
+    "sessions_skipped": 78,
+    "sessions_errored": 0,
+    "sessions_needing_manual": 341
+  },
+  "updated_records": [
+    {
+      "type": "action",
+      "id": "act_mpww1ch2_5cc4ae3c3941",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpww1b5s_558ec15d7f03",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpww0zht_04c1fdae1097",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpww0yhs_d9978b4c8feb",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpww1181_6b4fe5c86a8e",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwvuzme_cb2078b94929",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwvuyi8_c9069811a445",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwvrz0t_c294c77ba11d",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwv1z5q_ed78a28a8ae2",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwv1v0u_c5e211bac3db",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwltq5k_fe10fdd96ab1",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwl02c9_a3167df4426a",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwkfz97_d6dd30716969",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwkfyb6_50722d8a2ae7",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjys88_45e6f2ae0dca",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjufh2_e1c20f6dbc1d",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjolca_e1fa9bd64744",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjo4lu_616914aff3e5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjlqb4_e0724b80f252",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjjxcg_b5952ad15db5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjins4_ddfb5db18820",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwjg41y_22480d26f5b6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvysjo9_3987adcd0bd6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvxvvxd_adc9df959dea",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvxq8kt_a96ecf43db16",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvw1ins_78263fb20f7f",
+      "old_project": "workspaces/qbit-migrate",
+      "new_project": "qbit-migrate"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvvzuod_d49cbbd01724",
+      "old_project": "workspaces/qbit-migrate",
+      "new_project": "qbit-migrate"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvv069t_563dc03dc9c5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "demo_mpsybvbu_f1b13c3af306",
+      "old_project": "/tmp/agentmemory-demo",
+      "new_project": "agentmemory-demo"
+    },
+    {
+      "type": "session",
+      "id": "demo_mpsybvbu_ad9ece477d6d",
+      "old_project": "/tmp/agentmemory-demo",
+      "new_project": "agentmemory-demo"
+    },
+    {
+      "type": "session",
+      "id": "demo_mpsybvbu_e0ac4d51f24c",
+      "old_project": "/tmp/agentmemory-demo",
+      "new_project": "agentmemory-demo"
+    },
+    {
+      "type": "session",
+      "id": "ses_184cec160ffedXe5tkIOFoTuAF",
+      "old_project": "/home/kiffer/project/bob-ollama",
+      "new_project": "bob-ollama"
+    },
+    {
+      "type": "session",
+      "id": "ses_184c892e7ffe2Cdh32pTcrbkik",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184c7bca5ffe1JLHN2hDPcCALv",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184c36c5fffeDhEwCIoJTCeXg0",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184ba9ac1ffenlAsHorHc88XPS",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184b8257affelEx42BSxempJlZ",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184c63acbffevY79BokbK8HZpD",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184dff707ffetKJF65MPiTEB0P",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18524bc01ffeUFvk2kW3GS2iMr",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1852b324affeUZtMzdLQTdZSOl",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1860795b9ffejwU8KCa3M44txn",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18729e1cdffelpGrU51bPvwBRM",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18798d48bffe7aLhMcDEbgmMNT",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184b779a8ffenFi3K1R5KPA2c1",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184b67d5dffefAhQmh92jvVnfV",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184b3eb93ffekWngfaxFBwr11Z",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184b2b836ffeSawFO3qByxaoZN",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184b25471ffes0Xn0JOST6rIl2",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184afcb30ffe8Z1KEvlLYG1sAm",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184ae60dcffeHpbwTBgdH2D0ea",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184abd9f2ffekLL93f2yt0hB9G",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184a885a4ffegOtHLBlsr6Uzdp",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184a3a02affeE2dfORu3zEFCne",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184a23391ffevYZTcsheSGGMDc",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_184a07149ffen3Y8dErLYY9OBZ",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1849661beffe3bL8fCOBvm770t",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184946868ffe2Y4tipfNzdyjh4",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184919afcffeeWwoljexIaUnBB",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184913e3dffezkGpZjsdR46l2S",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184872520ffe85NeWf8SYfAUJE",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18486a7e5ffevweZvTJkNymlye",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18486882cffeF78HflB8AHz2Ax",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184864daaffevl4WCySi1qZKA5",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184837575ffe7dnb8pDkrfxtYX",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18482a6d8ffePf0dIUtRstt06N",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18482689fffe9N8AzFu1h96Z30",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1845a0196ffeR3qJmml7VqvSBH",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18458280dffellIPQCgBZwgGNe",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18452149dffe3shgjl95WvvK4B",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184380042ffehxgVetJF1Sxrop",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1842a6337ffev4g7iMYbaDId3O",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1841b079affeQSZbqZQGUPFW07",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_184178a02ffesZ2TKQW77jRYx6",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1841715f7ffeudMmGW1C2WefRO",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1825da820ffeZLKXny8rBhq1p0",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1825c0435ffeudP3P9Mi6MaeWS",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18213f135ffej06bbvkaAPdowB",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18205d2a9ffe9P5HcQg6neuyA0",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18203213affe6ZExyY5PGQixSP",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_1820046aeffeeUbwvj8Z08D427",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_182001d29ffejUEJb64jm36mDE",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_182001637ffe5OWhV3AcqbGe80",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181fc6b2effeF5DA82SLhwlkmY",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181fc5988ffe07wcxs4Fp3zD1l",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181fa4811ffeeAj8Ncs4FuWO5b",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181f4848effeB6XChcoE3gbJd5",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181f3c886ffemhJltosjSf5rMc",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181f38287ffeTo51t9i63rR6ED",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181f1cd6fffeS0hwsSRAIT7qal",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181f1a9e7ffeTV15L84kRqfwS6",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181f134b4ffev5ZhmaQPRPMFZE",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181f0473effe6T7xcPgRkwIKXW",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181ef05ceffeoMbFcSwVucBp9K",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181ebee16ffemwIx0MNR4Stm5K",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181e91314ffegcOW1Ze6yY6O4W",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181e82209ffeajPkX1Y2HnULGY",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181e811b4ffewCMexKOj9TQQTk",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181e37162ffee5FoyNCJBuCxni",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181e343a3ffezunJTbbRTBy147",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181de8d51ffe0wmM6tQ8VQ4Xdc",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181d6c22bffeWffC0DQdrq9ipS",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_181cc5f55ffehDDejzKFNzNb6L",
+      "old_project": "/home/kiffer/project",
+      "new_project": "orphaned-workspace-root"
+    },
+    {
+      "type": "session",
+      "id": "ses_18051bf1fffecXPeHOe85XN6si",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_18050aa7effeu1QRuwLzO93jfe",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_1804d39e4ffeUilbfVdmNHPJJb",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1804103f8ffeXDOoDdTASjcuYx",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_18040f0efffeaItCXhSMw3omkG",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1803742b9ffet4xqsKiy4AZvNx",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_180361f4fffeJUNQkgtyYqTae5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_180333108ffenusU4jVHTYBkgO",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_18030277bffeuvkVx6lwktGAxH",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1802e07f6ffeEOE8EeSzhi3DzK",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1802c0203ffeoB6N45cGipUSXG",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1802b37b1ffe11iWIvDQeK7f2U",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_180107ccbffe7KBqs6ePUlDw3B",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_1800fbc29ffeCNCXlw02t0TD8i",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ffbc66effeT2AT4KXq3SwUiN",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17fc08dbcffe4ZXHJVFLfnnRGI",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d467fb5ffeQCC0hhskH7E630",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d3a3f18ffeo5Z1sUb7kcUXeS",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d39dfb0ffe8EYdbxpoFBIZoV",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d224607ffenFOlzmLTN1brRA",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d267423ffePEm6q77dPM216r",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d20929bffeMc6lQNo7uf6gm7",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d1e15eeffeE45QUtETlao7vL",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d16a1b3ffeZRgcjeyWThHI8y",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d13de37ffetYITXXCSeit3TN",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d137b47ffedPPB3Trqt692es",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d12d181ffeSYYPSJhe767Wx6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d110c28ffestKuC0rAofh4tO",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d0c1d9bffe5rsYFYcbFX5Mw5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ce6b198ffe2Ycl1FBa9IyIyk",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ce53335ffe5JHAgrEoGUxCQx",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17cdd9f42ffe7so7DpO1eVEUS5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17cdd6cc9ffeU09CW5cqt8tjnZ",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17cc70516ffevhL51ntqegkES7",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17cb7fa5fffenqGu51dwwznOZW",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c7cc174ffefCsY2CEBYLGiQj",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d2ca576ffe1HFR4rfvMlNtSm",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17d379ad5ffeNQXLBjCyXlpBjo",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c6d294effe2UB6zYQLwFvEIE",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c68f67bffeeakWFK3fzX4OFa",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c609f9bffe77dJjTvgx1g0ii",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c608a90ffeLeMUYpVklqP2I7",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c60750fffetKZk14y70OhOh5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c605eefffek3rTzu8NK5I4Nk",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c604463ffe9PWCJmgsjyMpS4",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c595698ffe5dBJKSLSJYjgDc",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c4b91d8ffe2l75c3kMw8oD06",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c216a41ffexW8tdl7j0UQ3Xs",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c2138a1ffevazhPuOLbuLzOE",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c1ef976ffeUZ300ZcYv7mwJF",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c147c94ffecQC0F2ywhV0eGT",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c1192f9ffeRBNB5MXga3617K",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c0e7e3fffeNXMYPKBbesp9eR",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c0d4d5dffeb4ruPA2I1umLW8",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c0ce2caffeRTlVacgtJ5BB46",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c09ee14ffem2p616UxvbjxXx",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c076e7fffewzIsJtwhTSK5x4",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c05ad7cffetEJNs1UDY0qNqv",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c035b18ffebTf1NmlU13E27D",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17c026132ffeI9TKyaC14eh83r",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bfc9cafffeWV5bTCf7LfOZOu",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bfc1a31ffeqf3M1gqlfI2od9",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bfae294ffeIxk9BrVW3imDBv",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bf9ccdaffeLPUiEFKb7lIouI",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bf840abffeo6b2ioQheSfSPF",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bf6d352ffehpng08tXDwHISt",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bf62cdbffejQ2JJ6xeqorjs8",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bf3a101ffeLJi0ooQYbTMtbw",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17bf1c822ffelTtVmieH8vQBOG",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b597f78ffeFk37y7uhnHBSTn",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b596ad1ffeYttXFrK5zRMZ9B",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b57a87bffeyrl5K3m4Ab2ggW",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b56addaffewqWPly501JTSPU",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b487bf2ffeU2gqXPlVnpMxEF",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b4747bcffet6OcxFBjW6y6bR",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b4477e3ffeAysP1zowVdnCZl",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b42fe5fffee1UDx0AqJ2m6X6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b415228ffeofGZD9o6aX4Mba",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b3e6eebffeZYZ1Baw3A44qzA",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b3d548affeiEGq672sepOWMf",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b3c36eaffehpcel6hohElRpL",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b3bc5a4ffeS54IpDqrIa5311",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b37f0a0ffeb5osabD1QeZhNN",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b2d2d82ffeUtmQPKLySmENbf",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b2d21d1ffeJJBILLXnWsSKlN",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b288a7dffe0G6zSW24hUE5Bs",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b285f8affeqMJBZIrxdkWfGD",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b23a938ffeXlrP5rJQEH8PIp",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b2034ffffeXRAuw8M3M54AHP",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b127b58ffeP6f91Lq4CwzzQy",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b0f395bffeCd1w1jF5oDbxhI",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b0f154effeuti0gyIfRxVlX9",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17b041127ffed0hPcxtPG6Z5I6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afd50c2ffeqfzBD4Bf9dJql9",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afd388fffeF8N6PjrrXJ8QPT",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afd2122ffeT91pYjRcUyUx62",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afd12eeffeqQzkde98ySyZku",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afd059dffeBWdAmY35KjTu76",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afbbf51ffeIZNMepqdATMH6r",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afb9dd7ffeaTTmYALOuH4DEp",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17afb79e0ffeOK66QCO3tL75NX",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af8abc4ffetDkIC1Qm73kPyq",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af656f4ffeGhkg4xp4qamXb4",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af63378ffeZVyTAF4gGONI12",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af622a2ffeTNIai4Dwt2htAg",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af6119effex9CD8AEXZ932I5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af37b15ffeRy4AKFzd8u5J8i",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af3659fffeEvX4C2cB92C6b8",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af2001fffeoqstZf7hacyNz0",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af03d6bffeEU2v01Omfis8tR",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af01939ffeltZzSqJvDIJd8a",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17af005e3ffeIX5fMkPRfxv1Ch",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aef11ecffeW6C9UjGDOdsiAm",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aec9564ffev8i20jzEDQPx2q",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aec88c8ffeUQnah2GnjTdS05",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aec815bffeeHzcZWvDEKRouJ",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aec797bffeBuMzRnv7pghW8g",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aeb6acdffefJfTnsiPpdsIb8",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aeb5b3fffecndVMmKgEFl7o1",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aeb51e8ffe509Ft1R5YOfXEU",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ae43a0fffeuwqvKxgugoN9od",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ae324cbffeGfrqKjgXxNLTu9",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ae2b0efffeYSmo4qnkbnNJMA",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ae2203affeVEIwl9k43q060G",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ae2134affeXCsZDM7dmOgQNS",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17adb4a8fffehn8oisCMprDsEz",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ada13deffey4crWBJf5fKu76",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ad940c0ffeEugjroVB1QK364",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ad791fdffeCG2sgfcoFva25m",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ad5df7bffe5mbARb1eeAl4Vb",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ad3a6f0ffelP7EamxFpz2JD2",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ad1d811ffeHaNXIbTDkdtpE6",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ad0162bffeEb9ct6aOAGZZrj",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aceae51ffew3K2Z74gy0llLq",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ace1e6dffeQ7mljH9S2AEviV",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17acd9771ffeaA0vWuQExhwmzm",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ac90cadffeVurlM7jguzrYqV",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ac2d07affeKp2fqTlTyam12T",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17abf0c35ffeL7By6aGHsvYOaR",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17abeebc1ffetyDkUSnp7dKIrz",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17abaa8e0ffe6yAzZF5k36TBls",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ab9d92bffeD1do8j8jEWo5P1",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ab9cfb8ffeMBF5AwKTaN6dZp",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17ab7e61fffeggexVJihUfU21Y",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aac25d5ffeZL7GHuOtyByGd9",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aaa5d7effeEz8v6EV5RgTG5B",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aaa598cffef7ivEURVFiQB12",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aaa55dcffeoigpxk70sEofF7",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aa88cd7ffe3oOENvg4jhXgiz",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aa6db0bffewdJ1GMu05gpZJL",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aa5fe49ffeORSEzpcCsK4PRf",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aa4e9baffe5EQl3GT5N7yInL",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aa3a866ffeTo322M2nkqkSww",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17aa0441bffeU7rd4MNbWUoOZg",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a9c90bbffew4vfV2NT9zKCku",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a99f130ffe3x7FvvjBGgpQiJ",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a983001ffeKSc87r5r4h9cyh",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a97535dffeoKa9vmRhyzU2TC",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a968d7fffeEPI5to27ApYZcT",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a960b41ffeQtWqfSrQxDYgDy",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a8948fbffeL1jCB1qsJdSSQY",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a70f9e6ffeGQVHUUUXecusAB",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a6d3225ffeoM2gPpA91tgmKw",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a6a3236ffex3q9NXg23AsKtB",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a695711ffe1UqtbeI0MRAPk6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a626806ffe8pEk8x06Fzw9Zz",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a610aadfferDXQ1OZ3O1VsH2",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a50a685ffeYokyiwACVlaRki",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a507b49ffe56TrfU4xfw7G9U",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4ff1d6ffehWMdgFz4Mhp639",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4f1a6dfferg7gy5HgkTQdYr",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4ecd6effeoZCETNbUaSrWvY",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4e4a02ffeVylyReQb7GcigA",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4dfd01ffe3SVphVomPDjEJO",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4d7b90ffenv46QyBlG4m2WF",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4cbc4cffe3k4Ni5xsG7NQIE",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4b70efffeg0Dt48ANTVxIHv",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4a8cfcffe5K4a50Q5sp2OGc",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a48b3eaffe7Kbu8QXPNm1NnX",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a46cc12ffeA9H1RfHPzf7OS4",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a45ff9affemXQNVPMrT2kc3M",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a44bec7ffePwv3L8aLEdNaWY",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a437ed2ffeOr3An2vcjMC6q8",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a4189aaffeSqrgEdNmmRMDBU",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a3efed1ffej7YSPWJ2DtIs75",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a3db4bfffeF4ySh6w8VN0BFg",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a398d6effe9hOWfROTGgjrBv",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a3537a9ffeLiYuX8YbKw0D3J",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a328b1dffejYmFwQsJrIrf7B",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a2d860bffeALMJjn4VG0JWpb",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a2431b1ffe7W7khzq29z01ge",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a23809fffeLzLtKsr2ZLphWa",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a1f4240ffe8NRH3wSA7KI4D6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a1c3b02ffeCDgpGJ5PGZZznZ",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a14009dffeDxAfNAx3DCvJTX",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17a08454cffeNGr1xkrD1l8SFt",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_179eb3f5affeJRZCEF1NIwVc2P",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_179e9b2c5ffeG079sY479bm3P2",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_178dc8fd2ffe3ruIkAkbWnFC0G",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_178bca720ffeYPxymMi37KoUur",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_178726925ffe6lvXfUZaLODlRL",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_178355839ffemn7s8uKvc2aGik",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_17805a0a0ffeVJRquJnpjaGera",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_178053cdaffeOi16dkxVdz5fp5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17803d233ffecYoHoLs9IdNQQi",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1780066beffeJPWx7F7MB6ICbJ",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177f6dc90ffeUDHlzSXZgkTGIg",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177f4fe76ffeYN1KaKCYA62XWj",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177f4226dffe1E22uALO3oiwx0",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177f2d0e1ffe49NT0kY4ns544e",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177f13458ffeF60PlOihLb62Qu",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177f0d477ffeEwW8vu6IyHCmdX",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177eca966ffezRiDcoJuOPcH7f",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177e997a2fferWD0pmDVozxcjH",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177e89161ffencscSnBHVGwm7U",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177e58c16ffeFgt52UpGzCc6PM",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_177e10316ffeFW2YgpIHI7lSEt",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177dd5077ffeVZgZ86dxWeVP0q",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177dd415cffejIo0o0rji8gbQl",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177dbe1b3ffeklo1z3uO9bCw2Y",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177d07e7cffeeKE8HdBVkvaxT5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177cef214ffepFmsaqtOwHkBy1",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177cd5e09ffeQb1T8qBfjkxip6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177bd6463ffec6klHpQnmZUbXO",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177b9d98bffe4IhPzswG3z9jtJ",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177a859b0ffeVmOG9OzzI5EsBR",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17796b442ffeUkY3lC2rW8jsBS",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17784ee74ffe75EAI4bW440rf6",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_177683291ffeZaxibFm8UoRPSr",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_176d13db8ffeHpSYWUKOB7d8mc",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176cd545cffezdncszMZIcd22J",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176cc9d32ffeOhkmiJym9cbD6s",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176cb47f7ffeMx1jaX8roqDB6Y",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176babfe9ffezaBF541lfBb0XB",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176b8a4e2ffeIH4WLnwDPLKz4R",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176b8917dffePnWwB6Qhyb3EeP",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176b41d78ffeZCuQdhk52EEjHU",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176b40ff4ffelOUAy74zMRKXYP",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176b3eb21ffexm80cr4cAkPcvu",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176b3ddf4ffeoN9gvdaUaVNuCH",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176ac4d97ffeo5nXQjErv4CEBv",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176a7638affed6kYtymxnC223X",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176a63542ffeItlwae6GJ7wEhf",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176a4417bffe6YeTz71x996Swf",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_176af810affec9TTCyZfqw7tds",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_1769d8569ffeyjOpS6gYF1I3K5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1769b940bffe2Go7xUBrWmrKnT",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_17699b9c7ffeYCfnqWHLmGGR9m",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_1768fea8effeVODK1erSFuLo5Z",
+      "old_project": "/home/kiffer/project/bob",
+      "new_project": "bob"
+    },
+    {
+      "type": "session",
+      "id": "ses_176005d7dffe8ODsKP4OuTMVy5",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175fcab11ffeEjYuery9p7S2ct",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175faa7aeffeb8e5cVZw0bNgZ2",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175f590aeffeUVGT4CdIZnaUJr",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175f00cadffeCv7iO9E4D3gkfR",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175ee77ffffe6OTSYADSo4YRHN",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175ec9a86ffe7smlImkjgud1fC",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175ec07a1ffepakXOIt9UBsBPW",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175eb08e3ffed3OGi3vtpigT0Y",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175ea3490ffeFgPH6VtRVtcek3",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175e994d7ffeQ12BgYtehiihAu",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175e8253cffegSp7TuQfzknYxa",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175e7d19fffeEaoNnT5jbyS03Y",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175e6fdd0ffeIicUfpjxqBvAxr",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175e640daffeT0cyGJZhSoboJN",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175e0e39cffe3lZqPJ9xdClJcG",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    },
+    {
+      "type": "session",
+      "id": "ses_175e0021effemui7UqcRzeWPvk",
+      "old_project": "/home/kiffer/project/kodehold",
+      "new_project": "kodehold"
+    }
+  ],
+  "skipped_records": [
+    {
+      "type": "action",
+      "id": "act_mpx3om6i_b748f40100e4",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3olhq_564a6a6745aa",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3okku_45f4641553cc",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3ogs0_d711d1adda77",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3ogs0_55991841211a",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3ogrz_9eba95b4b4e8",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3ogrz_50f0a7466c3b",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3ogrz_ee1aae08410c",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpx3ogry_9fc588b4866b",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwngbd4_843453432885",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwngbd4_0daf6fcd55bc",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwngbd3_d587328d9b19",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwngbd3_262db1269af7",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwngbd3_c8fdaa191ff1",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwngbd2_be7366e48037",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpv4ocp5_9d1b38a28ae7",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwnfy4q_47e26ce4df49",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpwnfxom_ca3ff4f20d14",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvr5sn8_491c38ce8fcc",
+      "project": "flow-test",
+      "slug": "flow-test",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvrl5ce_3f8b6843dd43",
+      "project": "flow-test",
+      "slug": "flow-test",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvrl5ce_af559db1d5f3",
+      "project": "flow-test",
+      "slug": "flow-test",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "action",
+      "id": "act_mpvrl5cd_7fc5f4f3f03e",
+      "project": "flow-test",
+      "slug": "flow-test",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1847d7f4effesR5NdOgvYJriJS",
+      "project": "<name>",
+      "reason": "No mapping found"
+    },
+    {
+      "type": "session",
+      "id": "ses_1847c8922ffeMLt4zikPksR0Kj",
+      "project": "bob` but instead it's showing `<name>`.\n\nLet me look at the agentmemory configuration and how project detection works. Let me check the opencode config and any relevant files.",
+      "reason": "No mapping found"
+    },
+    {
+      "type": "session",
+      "id": "ses_184776d74ffe1IBfDCMV1UGz0J",
+      "project": "<name>",
+      "reason": "No mapping found"
+    },
+    {
+      "type": "session",
+      "id": "ses_18476e99dffex51JqTcpSjDqVD",
+      "project": "<name>",
+      "reason": "No mapping found"
+    },
+    {
+      "type": "session",
+      "id": "ses_184759c9bffeq0NBWRGQH8f7ts",
+      "project": "bob. The issue might be with how agentmemory detects the project name.\n\nActually, looking more carefully at the AGENTS.md from",
+      "reason": "No mapping found"
+    },
+    {
+      "type": "session",
+      "id": "ses_1846b2bb4ffe0fONOG9uiQB7wN",
+      "project": ".agentmemory-last-project",
+      "reason": "No mapping found"
+    },
+    {
+      "type": "session",
+      "id": "ses_184678cedffeSbSpsPag6z36cE",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_184674424ffe3fj3EYdujfEdV2",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181b68d2bffeXG4wNRtdtaoL2v",
+      "project": "bob-ollama",
+      "slug": "bob-ollama",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181430fe5ffe0TGMWYu35zv3tA",
+      "project": "kodehold",
+      "slug": "kodehold",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181373e4affe98i4MBwrtM3Ltf",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1812c1698ffeEPRqIQmKRi0Qst",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1812a5e1affe4b8XPyrulOrXGI",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_18129cbceffejvQtyIPnQ3dlxP",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181262677ffexhYfP9S0w1KoC3",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181252b14ffeKq5WkSJAsKpecQ",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181208cd0ffePiocQ1yRc6tcIU",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181202870ffee1r9e3KaV4bErP",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1811f2a69ffe7dMXOc6csKN0Pg",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1811e5f59ffeavhMqXb7M1M54z",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_181183e11ffecUBEvEZtQyQoDE",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_18112a63bffe4BDrZlGO0JkZLg",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1864f9c6fffeZNr8zTvfND8DfW",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_186dce805ffeTe00GXJ7uSKd71",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_187018335ffet02ofKhuNmaFOp",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_190d1f33cffetxfNxZEnBf6U9E",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_190102225ffemCzc1e40Q2ctEu",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_190176aa0ffeySu1hE9Hg46MGp",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19018a795ffecag0X3JcOuTh9q",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1929aa1a7ffeGmYwJOgYzs4Idy",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_196a4d092ffeZI3K57XHBVfUSX",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_196628fcaffeZ3lj3z42mLPt2w",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_197266adcffeQdHmtVlKMLXcge",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19752f515ffefI8kFJBqGI9o2s",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_199a58553ffeCE3I6T0zZPF6tG",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19e16a9bfffeQN0yxzm8png0Iq",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_199d6d371ffemHQDI2mPYvxgg0",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19af3fde4ffeL40RDjXgUJB2Zr",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19b248ce0ffeR0OIIomo2jJVIJ",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19b35a9ceffe0Ex2IyBwvH8aME",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19b57f94dffeFovXqVnj6VZfJH",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19bbe742effeDahekQz2Lrwvwv",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19c240247ffe9XPxOkYQMqPCFG",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19c29b45affeAT4Lg2Ma6roAyI",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19c45fc17ffeNPcY7fylfJYBBB",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19c99d4a6ffeRKPxicaG3uOT1a",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19f2d611cffeCfQI297pk5ZLKJ",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19f62700effek7kOjGwka55FeT",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_19fd23810ffenri6mlGqlpsZa9",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1a009e48fffeZZCruOwqtcuELJ",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1a038be80ffegPmSITwgk4XAFh",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1a13f574bffejdqLmRRCAkBEH9",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1a1a9709dffeEQ6XXryNGxo060",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1a1f4dd2fffe0sSyC1wOd6CA7P",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1a38ac775ffeN1661QH5sYN6sm",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180fb86b8ffef7S7eDDi7kttJI",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180fb4facffec19HufX8QpETxQ",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180f74f08ffeJ0nXz5T8Btxbz7",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180f35cb3ffea0Y7RXSQt51gig",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180f350cfffebHKBigMFD7OTdT",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180f20e12ffeTL1Ed5exSKezsq",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180ee1c26ffep1MzCwrSYTsdFe",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180e7521dffeCdj8WIqdfzM4cT",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180e73976ffeVPcNXlRYinTtjm",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180d63d14ffe6ERi6aoMtKOlY9",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1806db0f1ffe82vr5CxLU3BZmF",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1806d1738ffeTVFhK4IUMVYdrh",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1806abe3affehVioMc4Ru55UxN",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180684db1ffevp8aLVkahlKaHm",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_18067c9c8ffe4Sik4JBN1sv4aC",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_18065b05effexqOMeY0gybMm09",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180651b80ffeGQlsz1r3NmO2fV",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1806484bbffeqmu4Xs9mI4PWB8",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_180633c6dffeNvOmL7uyYSMAjq",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_18061a01bffeaXwQKoHLI8HuB8",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1805ea5a5ffeWf6DK06OETojRQ",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1805d012effe9mR7CjRd2KvRJI",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    },
+    {
+      "type": "session",
+      "id": "ses_1805bc0e1ffesSHKNUDygzGv7T",
+      "project": "bob",
+      "slug": "bob",
+      "reason": "Already target slug"
+    }
+  ],
+  "errored_records": [],
+  "manual_sessions": [
+    "demo_mpsybvbu_f1b13c3af306 (/tmp/agentmemory-demo → agentmemory-demo) — no update endpoint available",
+    "demo_mpsybvbu_ad9ece477d6d (/tmp/agentmemory-demo → agentmemory-demo) — no update endpoint available",
+    "demo_mpsybvbu_e0ac4d51f24c (/tmp/agentmemory-demo → agentmemory-demo) — no update endpoint available",
+    "ses_184cec160ffedXe5tkIOFoTuAF (/home/kiffer/project/bob-ollama → bob-ollama) — no update endpoint available",
+    "ses_184c892e7ffe2Cdh32pTcrbkik (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184c7bca5ffe1JLHN2hDPcCALv (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184c36c5fffeDhEwCIoJTCeXg0 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184ba9ac1ffenlAsHorHc88XPS (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184b8257affelEx42BSxempJlZ (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184c63acbffevY79BokbK8HZpD (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184dff707ffetKJF65MPiTEB0P (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18524bc01ffeUFvk2kW3GS2iMr (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1852b324affeUZtMzdLQTdZSOl (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1860795b9ffejwU8KCa3M44txn (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18729e1cdffelpGrU51bPvwBRM (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18798d48bffe7aLhMcDEbgmMNT (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184b779a8ffenFi3K1R5KPA2c1 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184b67d5dffefAhQmh92jvVnfV (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184b3eb93ffekWngfaxFBwr11Z (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184b2b836ffeSawFO3qByxaoZN (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184b25471ffes0Xn0JOST6rIl2 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184afcb30ffe8Z1KEvlLYG1sAm (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184ae60dcffeHpbwTBgdH2D0ea (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184abd9f2ffekLL93f2yt0hB9G (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184a885a4ffegOtHLBlsr6Uzdp (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184a3a02affeE2dfORu3zEFCne (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184a23391ffevYZTcsheSGGMDc (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_184a07149ffen3Y8dErLYY9OBZ (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1849661beffe3bL8fCOBvm770t (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184946868ffe2Y4tipfNzdyjh4 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184919afcffeeWwoljexIaUnBB (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184913e3dffezkGpZjsdR46l2S (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184872520ffe85NeWf8SYfAUJE (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18486a7e5ffevweZvTJkNymlye (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18486882cffeF78HflB8AHz2Ax (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184864daaffevl4WCySi1qZKA5 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184837575ffe7dnb8pDkrfxtYX (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18482a6d8ffePf0dIUtRstt06N (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18482689fffe9N8AzFu1h96Z30 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1845a0196ffeR3qJmml7VqvSBH (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18458280dffellIPQCgBZwgGNe (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18452149dffe3shgjl95WvvK4B (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184380042ffehxgVetJF1Sxrop (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1842a6337ffev4g7iMYbaDId3O (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1841b079affeQSZbqZQGUPFW07 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_184178a02ffesZ2TKQW77jRYx6 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1841715f7ffeudMmGW1C2WefRO (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1825da820ffeZLKXny8rBhq1p0 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1825c0435ffeudP3P9Mi6MaeWS (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18213f135ffej06bbvkaAPdowB (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18205d2a9ffe9P5HcQg6neuyA0 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18203213affe6ZExyY5PGQixSP (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_1820046aeffeeUbwvj8Z08D427 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_182001d29ffejUEJb64jm36mDE (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_182001637ffe5OWhV3AcqbGe80 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181fc6b2effeF5DA82SLhwlkmY (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181fc5988ffe07wcxs4Fp3zD1l (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181fa4811ffeeAj8Ncs4FuWO5b (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181f4848effeB6XChcoE3gbJd5 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181f3c886ffemhJltosjSf5rMc (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181f38287ffeTo51t9i63rR6ED (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181f1cd6fffeS0hwsSRAIT7qal (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181f1a9e7ffeTV15L84kRqfwS6 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181f134b4ffev5ZhmaQPRPMFZE (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181f0473effe6T7xcPgRkwIKXW (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181ef05ceffeoMbFcSwVucBp9K (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181ebee16ffemwIx0MNR4Stm5K (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181e91314ffegcOW1Ze6yY6O4W (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181e82209ffeajPkX1Y2HnULGY (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181e811b4ffewCMexKOj9TQQTk (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181e37162ffee5FoyNCJBuCxni (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181e343a3ffezunJTbbRTBy147 (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181de8d51ffe0wmM6tQ8VQ4Xdc (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181d6c22bffeWffC0DQdrq9ipS (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_181cc5f55ffehDDejzKFNzNb6L (/home/kiffer/project → orphaned-workspace-root) — no update endpoint available",
+    "ses_18051bf1fffecXPeHOe85XN6si (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_18050aa7effeu1QRuwLzO93jfe (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_1804d39e4ffeUilbfVdmNHPJJb (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1804103f8ffeXDOoDdTASjcuYx (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_18040f0efffeaItCXhSMw3omkG (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1803742b9ffet4xqsKiy4AZvNx (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_180361f4fffeJUNQkgtyYqTae5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_180333108ffenusU4jVHTYBkgO (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_18030277bffeuvkVx6lwktGAxH (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1802e07f6ffeEOE8EeSzhi3DzK (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1802c0203ffeoB6N45cGipUSXG (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1802b37b1ffe11iWIvDQeK7f2U (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_180107ccbffe7KBqs6ePUlDw3B (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_1800fbc29ffeCNCXlw02t0TD8i (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17ffbc66effeT2AT4KXq3SwUiN (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17fc08dbcffe4ZXHJVFLfnnRGI (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17d467fb5ffeQCC0hhskH7E630 (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17d3a3f18ffeo5Z1sUb7kcUXeS (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d39dfb0ffe8EYdbxpoFBIZoV (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d224607ffenFOlzmLTN1brRA (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d267423ffePEm6q77dPM216r (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d20929bffeMc6lQNo7uf6gm7 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d1e15eeffeE45QUtETlao7vL (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d16a1b3ffeZRgcjeyWThHI8y (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d13de37ffetYITXXCSeit3TN (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d137b47ffedPPB3Trqt692es (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d12d181ffeSYYPSJhe767Wx6 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d110c28ffestKuC0rAofh4tO (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d0c1d9bffe5rsYFYcbFX5Mw5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ce6b198ffe2Ycl1FBa9IyIyk (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ce53335ffe5JHAgrEoGUxCQx (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17cdd9f42ffe7so7DpO1eVEUS5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17cdd6cc9ffeU09CW5cqt8tjnZ (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17cc70516ffevhL51ntqegkES7 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17cb7fa5fffenqGu51dwwznOZW (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17c7cc174ffefCsY2CEBYLGiQj (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d2ca576ffe1HFR4rfvMlNtSm (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17d379ad5ffeNQXLBjCyXlpBjo (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c6d294effe2UB6zYQLwFvEIE (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c68f67bffeeakWFK3fzX4OFa (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c609f9bffe77dJjTvgx1g0ii (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c608a90ffeLeMUYpVklqP2I7 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c60750fffetKZk14y70OhOh5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c605eefffek3rTzu8NK5I4Nk (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c604463ffe9PWCJmgsjyMpS4 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c595698ffe5dBJKSLSJYjgDc (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c4b91d8ffe2l75c3kMw8oD06 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c216a41ffexW8tdl7j0UQ3Xs (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17c2138a1ffevazhPuOLbuLzOE (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17c1ef976ffeUZ300ZcYv7mwJF (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17c147c94ffecQC0F2ywhV0eGT (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c1192f9ffeRBNB5MXga3617K (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c0e7e3fffeNXMYPKBbesp9eR (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c0d4d5dffeb4ruPA2I1umLW8 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c0ce2caffeRTlVacgtJ5BB46 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c09ee14ffem2p616UxvbjxXx (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c076e7fffewzIsJtwhTSK5x4 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c05ad7cffetEJNs1UDY0qNqv (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c035b18ffebTf1NmlU13E27D (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17c026132ffeI9TKyaC14eh83r (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bfc9cafffeWV5bTCf7LfOZOu (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bfc1a31ffeqf3M1gqlfI2od9 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bfae294ffeIxk9BrVW3imDBv (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bf9ccdaffeLPUiEFKb7lIouI (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bf840abffeo6b2ioQheSfSPF (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bf6d352ffehpng08tXDwHISt (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bf62cdbffejQ2JJ6xeqorjs8 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bf3a101ffeLJi0ooQYbTMtbw (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17bf1c822ffelTtVmieH8vQBOG (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b597f78ffeFk37y7uhnHBSTn (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17b596ad1ffeYttXFrK5zRMZ9B (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17b57a87bffeyrl5K3m4Ab2ggW (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b56addaffewqWPly501JTSPU (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b487bf2ffeU2gqXPlVnpMxEF (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b4747bcffet6OcxFBjW6y6bR (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b4477e3ffeAysP1zowVdnCZl (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b42fe5fffee1UDx0AqJ2m6X6 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b415228ffeofGZD9o6aX4Mba (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b3e6eebffeZYZ1Baw3A44qzA (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b3d548affeiEGq672sepOWMf (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b3c36eaffehpcel6hohElRpL (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b3bc5a4ffeS54IpDqrIa5311 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b37f0a0ffeb5osabD1QeZhNN (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b2d2d82ffeUtmQPKLySmENbf (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b2d21d1ffeJJBILLXnWsSKlN (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b288a7dffe0G6zSW24hUE5Bs (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b285f8affeqMJBZIrxdkWfGD (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b23a938ffeXlrP5rJQEH8PIp (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b2034ffffeXRAuw8M3M54AHP (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b127b58ffeP6f91Lq4CwzzQy (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b0f395bffeCd1w1jF5oDbxhI (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b0f154effeuti0gyIfRxVlX9 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17b041127ffed0hPcxtPG6Z5I6 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afd50c2ffeqfzBD4Bf9dJql9 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afd388fffeF8N6PjrrXJ8QPT (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afd2122ffeT91pYjRcUyUx62 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afd12eeffeqQzkde98ySyZku (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afd059dffeBWdAmY35KjTu76 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afbbf51ffeIZNMepqdATMH6r (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afb9dd7ffeaTTmYALOuH4DEp (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17afb79e0ffeOK66QCO3tL75NX (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af8abc4ffetDkIC1Qm73kPyq (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af656f4ffeGhkg4xp4qamXb4 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af63378ffeZVyTAF4gGONI12 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af622a2ffeTNIai4Dwt2htAg (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af6119effex9CD8AEXZ932I5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af37b15ffeRy4AKFzd8u5J8i (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af3659fffeEvX4C2cB92C6b8 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af2001fffeoqstZf7hacyNz0 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af03d6bffeEU2v01Omfis8tR (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af01939ffeltZzSqJvDIJd8a (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17af005e3ffeIX5fMkPRfxv1Ch (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aef11ecffeW6C9UjGDOdsiAm (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aec9564ffev8i20jzEDQPx2q (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aec88c8ffeUQnah2GnjTdS05 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aec815bffeeHzcZWvDEKRouJ (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aec797bffeBuMzRnv7pghW8g (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aeb6acdffefJfTnsiPpdsIb8 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aeb5b3fffecndVMmKgEFl7o1 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aeb51e8ffe509Ft1R5YOfXEU (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ae43a0fffeuwqvKxgugoN9od (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ae324cbffeGfrqKjgXxNLTu9 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ae2b0efffeYSmo4qnkbnNJMA (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ae2203affeVEIwl9k43q060G (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ae2134affeXCsZDM7dmOgQNS (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17adb4a8fffehn8oisCMprDsEz (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ada13deffey4crWBJf5fKu76 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ad940c0ffeEugjroVB1QK364 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ad791fdffeCG2sgfcoFva25m (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ad5df7bffe5mbARb1eeAl4Vb (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ad3a6f0ffelP7EamxFpz2JD2 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ad1d811ffeHaNXIbTDkdtpE6 (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17ad0162bffeEb9ct6aOAGZZrj (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aceae51ffew3K2Z74gy0llLq (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ace1e6dffeQ7mljH9S2AEviV (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17acd9771ffeaA0vWuQExhwmzm (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ac90cadffeVurlM7jguzrYqV (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ac2d07affeKp2fqTlTyam12T (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17abf0c35ffeL7By6aGHsvYOaR (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17abeebc1ffetyDkUSnp7dKIrz (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17abaa8e0ffe6yAzZF5k36TBls (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ab9d92bffeD1do8j8jEWo5P1 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ab9cfb8ffeMBF5AwKTaN6dZp (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17ab7e61fffeggexVJihUfU21Y (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aac25d5ffeZL7GHuOtyByGd9 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aaa5d7effeEz8v6EV5RgTG5B (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aaa598cffef7ivEURVFiQB12 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aaa55dcffeoigpxk70sEofF7 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aa88cd7ffe3oOENvg4jhXgiz (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aa6db0bffewdJ1GMu05gpZJL (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aa5fe49ffeORSEzpcCsK4PRf (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aa4e9baffe5EQl3GT5N7yInL (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aa3a866ffeTo322M2nkqkSww (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17aa0441bffeU7rd4MNbWUoOZg (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a9c90bbffew4vfV2NT9zKCku (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a99f130ffe3x7FvvjBGgpQiJ (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a983001ffeKSc87r5r4h9cyh (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a97535dffeoKa9vmRhyzU2TC (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a968d7fffeEPI5to27ApYZcT (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a960b41ffeQtWqfSrQxDYgDy (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a8948fbffeL1jCB1qsJdSSQY (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a70f9e6ffeGQVHUUUXecusAB (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a6d3225ffeoM2gPpA91tgmKw (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a6a3236ffex3q9NXg23AsKtB (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a695711ffe1UqtbeI0MRAPk6 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a626806ffe8pEk8x06Fzw9Zz (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a610aadfferDXQ1OZ3O1VsH2 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a50a685ffeYokyiwACVlaRki (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a507b49ffe56TrfU4xfw7G9U (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a4ff1d6ffehWMdgFz4Mhp639 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4f1a6dfferg7gy5HgkTQdYr (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4ecd6effeoZCETNbUaSrWvY (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4e4a02ffeVylyReQb7GcigA (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4dfd01ffe3SVphVomPDjEJO (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4d7b90ffenv46QyBlG4m2WF (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4cbc4cffe3k4Ni5xsG7NQIE (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4b70efffeg0Dt48ANTVxIHv (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a4a8cfcffe5K4a50Q5sp2OGc (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a48b3eaffe7Kbu8QXPNm1NnX (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a46cc12ffeA9H1RfHPzf7OS4 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a45ff9affemXQNVPMrT2kc3M (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a44bec7ffePwv3L8aLEdNaWY (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a437ed2ffeOr3An2vcjMC6q8 (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a4189aaffeSqrgEdNmmRMDBU (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a3efed1ffej7YSPWJ2DtIs75 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a3db4bfffeF4ySh6w8VN0BFg (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a398d6effe9hOWfROTGgjrBv (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a3537a9ffeLiYuX8YbKw0D3J (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a328b1dffejYmFwQsJrIrf7B (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a2d860bffeALMJjn4VG0JWpb (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17a2431b1ffe7W7khzq29z01ge (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a23809fffeLzLtKsr2ZLphWa (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a1f4240ffe8NRH3wSA7KI4D6 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a1c3b02ffeCDgpGJ5PGZZznZ (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a14009dffeDxAfNAx3DCvJTX (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17a08454cffeNGr1xkrD1l8SFt (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_179eb3f5affeJRZCEF1NIwVc2P (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_179e9b2c5ffeG079sY479bm3P2 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_178dc8fd2ffe3ruIkAkbWnFC0G (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_178bca720ffeYPxymMi37KoUur (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_178726925ffe6lvXfUZaLODlRL (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_178355839ffemn7s8uKvc2aGik (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_17805a0a0ffeVJRquJnpjaGera (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_178053cdaffeOi16dkxVdz5fp5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17803d233ffecYoHoLs9IdNQQi (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1780066beffeJPWx7F7MB6ICbJ (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177f6dc90ffeUDHlzSXZgkTGIg (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177f4fe76ffeYN1KaKCYA62XWj (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177f4226dffe1E22uALO3oiwx0 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177f2d0e1ffe49NT0kY4ns544e (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177f13458ffeF60PlOihLb62Qu (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177f0d477ffeEwW8vu6IyHCmdX (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177eca966ffezRiDcoJuOPcH7f (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177e997a2fferWD0pmDVozxcjH (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177e89161ffencscSnBHVGwm7U (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177e58c16ffeFgt52UpGzCc6PM (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_177e10316ffeFW2YgpIHI7lSEt (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177dd5077ffeVZgZ86dxWeVP0q (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177dd415cffejIo0o0rji8gbQl (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177dbe1b3ffeklo1z3uO9bCw2Y (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177d07e7cffeeKE8HdBVkvaxT5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177cef214ffepFmsaqtOwHkBy1 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177cd5e09ffeQb1T8qBfjkxip6 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177bd6463ffec6klHpQnmZUbXO (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177b9d98bffe4IhPzswG3z9jtJ (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177a859b0ffeVmOG9OzzI5EsBR (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17796b442ffeUkY3lC2rW8jsBS (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17784ee74ffe75EAI4bW440rf6 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_177683291ffeZaxibFm8UoRPSr (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_176d13db8ffeHpSYWUKOB7d8mc (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176cd545cffezdncszMZIcd22J (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176cc9d32ffeOhkmiJym9cbD6s (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176cb47f7ffeMx1jaX8roqDB6Y (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176babfe9ffezaBF541lfBb0XB (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176b8a4e2ffeIH4WLnwDPLKz4R (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176b8917dffePnWwB6Qhyb3EeP (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176b41d78ffeZCuQdhk52EEjHU (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176b40ff4ffelOUAy74zMRKXYP (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176b3eb21ffexm80cr4cAkPcvu (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176b3ddf4ffeoN9gvdaUaVNuCH (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176ac4d97ffeo5nXQjErv4CEBv (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176a7638affed6kYtymxnC223X (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176a63542ffeItlwae6GJ7wEhf (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176a4417bffe6YeTz71x996Swf (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_176af810affec9TTCyZfqw7tds (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_1769d8569ffeyjOpS6gYF1I3K5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1769b940bffe2Go7xUBrWmrKnT (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_17699b9c7ffeYCfnqWHLmGGR9m (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_1768fea8effeVODK1erSFuLo5Z (/home/kiffer/project/bob → bob) — no update endpoint available",
+    "ses_176005d7dffe8ODsKP4OuTMVy5 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175fcab11ffeEjYuery9p7S2ct (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175faa7aeffeb8e5cVZw0bNgZ2 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175f590aeffeUVGT4CdIZnaUJr (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175f00cadffeCv7iO9E4D3gkfR (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175ee77ffffe6OTSYADSo4YRHN (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175ec9a86ffe7smlImkjgud1fC (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175ec07a1ffepakXOIt9UBsBPW (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175eb08e3ffed3OGi3vtpigT0Y (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175ea3490ffeFgPH6VtRVtcek3 (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175e994d7ffeQ12BgYtehiihAu (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175e8253cffegSp7TuQfzknYxa (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175e7d19fffeEaoNnT5jbyS03Y (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175e6fdd0ffeIicUfpjxqBvAxr (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175e640daffeT0cyGJZhSoboJN (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175e0e39cffe3lZqPJ9xdClJcG (/home/kiffer/project/kodehold → kodehold) — no update endpoint available",
+    "ses_175e0021effemui7UqcRzeWPvk (/home/kiffer/project/kodehold → kodehold) — no update endpoint available"
+  ]
+}

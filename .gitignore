@@ -1,0 +1,24 @@
+.kodehold-state
+workspaces/
+*.pyc
+.env
+data/
+node_modules/
+__pycache__
+.venv
+
+# Auto-generated memory artifacts
+.opencode/memory/metrics/
+.opencode/memory/prospective/
+
+# Graphify generated output
+graphify-out/
+
+# OpenCode runtime log (auto-generated)
+.opencode/opencode-rag.log
+
+# opencode-rag workspace symlink (external project)
+workspaces/opencode-rag
+
+# Loop webhook secret
+config/loop-webhook.txt
