@@ -183,12 +183,28 @@ impl Pipeline {
     }
 
     pub fn run_generate(&mut self) -> anyhow::Result<()> {
-        // Generate phase delegates to the constraint solver
-        // If no patterns match, it falls back to AI (or skips)
-        self.context.generated = Some(GeneratedOutput {
-            files_written: vec![],
-            source: GenerationSource::Skipped,
-        });
+        let root = &self.workspace.root;
+        let mut files_written = Vec::new();
+        let mut source = GenerationSource::Skipped;
+
+        // Look for .khold spec files and compile them
+        for entry in walkdir(root, 5, &[".git", "target", ".venv", "node_modules"])? {
+            if entry.extension().and_then(|e| e.to_str()) == Some("khold") {
+                let output_dir = root.join("src");
+                std::fs::create_dir_all(&output_dir)?;
+                match crate::dsl::compile_spec(&entry, &output_dir) {
+                    Ok(result) => {
+                        files_written.extend(result.files);
+                        source = GenerationSource::Skipped;
+                    }
+                    Err(e) => {
+                        eprintln!("  ⚠ failed to compile {}: {e}", entry.display());
+                    }
+                }
+            }
+        }
+
+        self.context.generated = Some(GeneratedOutput { files_written, source });
         Ok(())
     }
 

@@ -25,6 +25,8 @@ pub enum Command {
     Listen(ListenArgs),
     /// Manage workspace plugins and hooks
     Plugin(PluginArgs),
+    /// Compile a .khold specification file
+    Spec(SpecArgs),
 }
 
 #[derive(clap::Args)]
@@ -187,6 +189,18 @@ pub struct PluginInitArgs {
     /// Project path
     #[arg(short, long)]
     pub path: Option<String>,
+    /// Output as JSON
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct SpecArgs {
+    /// Path to .khold specification file
+    pub path: String,
+    /// Output directory (defaults to spec's src/ directory)
+    #[arg(short, long)]
+    pub output: Option<String>,
     /// Output as JSON
     #[arg(long)]
     pub json: bool,

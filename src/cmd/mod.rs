@@ -4,5 +4,6 @@ pub mod pattern;
 pub mod pipeline;
 pub mod plugin;
 pub mod ship;
+pub mod spec;
 pub mod state;
 pub mod verify;
