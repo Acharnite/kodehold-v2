@@ -14,30 +14,8 @@
 | [ADR-0008](ADR-0008-single-binary-rust.md) | Single Binary Distribution in Rust | Proposed |
 | [ADR-0009](ADR-0009-dsl-software-specification.md) | DSL for Software Specification and Compilation | Proposed |
 
-## Historical ADRs (v1.0)
-
-The following ADRs are from KodeHold v1.0 (the agent-orchestrator design).
-They are preserved for reference. V2.0 supersedes them with a fundamentally
-different architecture. See `../v1.25.0-seed` in git history for the full
-v1.0 context.
-
-All v1.0 ADRs are in-process of being migrated to executable specifications
-per ADR-0004. Until then, they remain in this directory for historical context.
-
-The v1.0 ADRs (ADR-0001 through ADR-0060 in the Nygard-format filenames) cover:
-- ADR-0001: Foundation (agent-based design)
-- ADR-0002: Director + 6 teams
-- ADR-0003: Design document lifecycle
-- ADR-0005: LLM support
-- ADR-0006: Second opinion system
-- ADR-0008: Project lifecycle (marker-based)
-- ADR-0010: FLS front line support
-- ADR-0012: Adopted projects (symlink)
-- ADR-0017: Reviewers as gatekeepers
-- ADR-0049: Ponytail "Lazy Senior Dev" philosophy
-- ADR-0054: Graphify knowledge graph
-- ADR-0060: Loop engineering
-- ... and 27 more (37 active, 23 inactive)
+V1.0 ADRs are available in git history (commit `eb2f7b7` — the initial seed).
+They were removed to keep the v2.0 project clean.
 
 ## ADR Format
 
