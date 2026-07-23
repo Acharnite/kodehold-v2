@@ -3,6 +3,7 @@ use clap::Parser;
 mod cli;
 mod cmd;
 mod config;
+mod events;
 mod pipeline;
 mod solver;
 mod state;
@@ -18,6 +19,7 @@ fn main() {
         cli::Command::State(cmd) => cmd::state::run(cmd),
         cli::Command::Pipeline(cmd) => cmd::pipeline::run(cmd),
         cli::Command::Pattern(cmd) => cmd::pattern::run(cmd),
+        cli::Command::Listen(cmd) => cmd::listen::run(cmd),
     };
     if let Err(e) = result {
         eprintln!("error: {e}");

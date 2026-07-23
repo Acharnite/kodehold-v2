@@ -21,6 +21,8 @@ pub enum Command {
     Pipeline(PipelineArgs),
     /// Manage the pattern database
     Pattern(PatternArgs),
+    /// Start the event daemon (webhooks + file watcher)
+    Listen(ListenArgs),
 }
 
 #[derive(clap::Args)]
@@ -114,4 +116,23 @@ pub struct PatternAddArgs {
     pub path: String,
     #[arg(long)]
     pub json: bool,
+}
+
+#[derive(clap::Args)]
+pub struct ListenArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short = 'P', long)]
+    pub path: Option<String>,
+    /// HTTP port for webhook server
+    #[arg(short, long, default_value_t = 8080)]
+    pub port: u16,
+    /// GitHub webhook secret (for signature verification)
+    #[arg(short = 's', long)]
+    pub webhook_secret: Option<String>,
+    /// Paths to watch for file changes
+    #[arg(short = 'w', long)]
+    pub watch: Vec<String>,
+    /// Disable file watcher
+    #[arg(long)]
+    pub no_watch: bool,
 }
