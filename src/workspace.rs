@@ -182,6 +182,7 @@ impl CheckResult {
     pub fn warn(name: impl Into<String>, message: impl Into<String>) -> Self {
         Self { name: name.into(), status: CheckStatus::Warn, message: message.into() }
     }
+    #[allow(dead_code)]
     pub fn fail(name: impl Into<String>, message: impl Into<String>) -> Self {
         Self { name: name.into(), status: CheckStatus::Fail, message: message.into() }
     }

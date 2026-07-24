@@ -39,7 +39,9 @@ pub struct GeneratedOutput {
 
 pub enum GenerationSource {
     Solver { pattern_id: String },
+    #[allow(dead_code)]
     AiFallback,
+    DslCompiled,
     Skipped,
 }
 
@@ -63,6 +65,7 @@ pub enum PhaseStatus {
     Pass,
     Warn,
     Fail,
+    #[allow(dead_code)]
     Skipped,
 }
 
@@ -187,7 +190,32 @@ impl Pipeline {
         let mut files_written = Vec::new();
         let mut source = GenerationSource::Skipped;
 
-        // Look for .khold spec files and compile them
+        // 1. Run constraint solver — match patterns from the database
+        let solver_result = crate::solver::solve(&self.config);
+        for m in &solver_result.matched {
+            if let Some(pattern) = solver_result.patterns.iter().find(|p| p.id == m.pattern_id) {
+                let vars = crate::solver::template::extract_variables(&pattern.template);
+                let mut var_map = std::collections::HashMap::new();
+                for v in &vars {
+                    var_map.insert(v.clone(), format!("<{v}>"));
+                }
+                let code = crate::solver::template::apply(pattern, &var_map);
+                let filename = format!("{}.rs", pattern.name.replace('-', "_"));
+                let output_path = root.join("src").join(&filename);
+                if let Some(parent) = output_path.parent() {
+                    std::fs::create_dir_all(parent)?;
+                }
+                std::fs::write(&output_path, &code)?;
+                files_written.push(filename);
+                source = GenerationSource::Solver { pattern_id: pattern.id.clone() };
+                // Track pattern usage
+                let mut db = crate::solver::pattern_db::PatternDatabase::open();
+                let _ = db.increment_usage(&pattern.id);
+                break; // only apply the best match
+            }
+        }
+
+        // 2. Compile .khold spec files
         for entry in walkdir(root, 5, &[".git", "target", ".venv", "node_modules"])? {
             if entry.extension().and_then(|e| e.to_str()) == Some("khold") {
                 let output_dir = root.join("src");
@@ -195,7 +223,9 @@ impl Pipeline {
                 match crate::dsl::compile_spec(&entry, &output_dir) {
                     Ok(result) => {
                         files_written.extend(result.files);
-                        source = GenerationSource::Skipped;
+                        if !matches!(source, GenerationSource::Solver { .. }) {
+                            source = GenerationSource::DslCompiled;
+                        }
                     }
                     Err(e) => {
                         eprintln!("  ⚠ failed to compile {}: {e}", entry.display());
@@ -256,10 +286,18 @@ impl Pipeline {
         if json {
             let mut phases = Vec::new();
             if let Some(ref p) = self.context.parsed {
+                let total_size: u64 = p.files.iter().map(|f| f.size_bytes).sum();
+                let has_yaml = p.files.iter().any(|f| f.has_kodehold_yaml);
+                let mut lang_set: Vec<&str> = p.files.iter().map(|f| f.language.as_str()).collect();
+                lang_set.sort();
+                lang_set.dedup();
                 phases.push(serde_json::json!({
                     "phase": "parse",
                     "status": "ok",
                     "files": p.files.len(),
+                    "total_size_bytes": total_size,
+                    "has_kodehold_yaml": has_yaml,
+                    "languages": lang_set,
                 }));
             }
             if let Some(ref a) = self.context.analyzed {
@@ -268,12 +306,14 @@ impl Pipeline {
                     "status": "ok",
                     "modules": a.modules.len(),
                     "test_framework": a.test_framework,
+                    "has_cargo_toml": a.has_cargo_toml,
                 }));
             }
             if let Some(ref g) = self.context.generated {
                 let source = match &g.source {
                     GenerationSource::Solver { pattern_id } => format!("solver:{pattern_id}"),
                     GenerationSource::AiFallback => "ai-fallback".into(),
+                    GenerationSource::DslCompiled => "dsl-compiled".into(),
                     GenerationSource::Skipped => "skipped".into(),
                 };
                 phases.push(serde_json::json!({
@@ -309,16 +349,24 @@ impl Pipeline {
         } else {
             println!("━━━ Pipeline ━━━");
             if let Some(ref p) = self.context.parsed {
-                println!("  ✓ parse: {} file(s)", p.files.len());
+                let total_size: u64 = p.files.iter().map(|f| f.size_bytes).sum();
+                let has_yaml = if p.files.iter().any(|f| f.has_kodehold_yaml) { " +kodehold.yaml" } else { "" };
+                let mut lang_set: Vec<&str> = p.files.iter().map(|f| f.language.as_str()).collect();
+                lang_set.sort();
+                lang_set.dedup();
+                println!("  ✓ parse: {} file(s), {} bytes total, langs: {}{has_yaml}",
+                    p.files.len(), total_size, lang_set.join(", "));
             }
             if let Some(ref a) = self.context.analyzed {
                 let fw = a.test_framework.as_deref().unwrap_or("none");
-                println!("  ✓ analyze: {} module(s), framework: {fw}", a.modules.len());
+                let cargo = if a.has_cargo_toml { " (Cargo.toml)" } else { "" };
+                println!("  ✓ analyze: {} module(s), framework: {fw}{cargo}", a.modules.len());
             }
             if let Some(ref g) = self.context.generated {
                 let src = match &g.source {
                     GenerationSource::Solver { pattern_id } => format!("solver ({pattern_id})"),
                     GenerationSource::AiFallback => "ai-fallback (not yet implemented)".into(),
+                    GenerationSource::DslCompiled => "dsl-compiled".into(),
                     GenerationSource::Skipped => "skipped (no patterns defined)".into(),
                 };
                 println!("  ✓ generate: {} file(s), source: {src}", g.files_written.len());

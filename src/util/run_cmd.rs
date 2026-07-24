@@ -8,6 +8,7 @@ pub struct CmdResult {
 #[derive(Debug)]
 pub enum CmdStatus {
     Ok,
+    #[allow(dead_code)]
     Warn,
     Fail,
 }

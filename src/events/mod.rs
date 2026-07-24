@@ -7,6 +7,7 @@ use crate::pipeline::Pipeline;
 
 #[derive(Debug, Clone)]
 pub struct Event {
+    #[allow(dead_code)]
     pub id: String,
     pub source: EventSource,
     pub event_type: String,

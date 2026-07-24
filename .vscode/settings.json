@@ -5,6 +5,11 @@
             "matchCommandLine": true
         },
         "cargo test": true,
-        "git add": true
+        "git add": true,
+        "cargo build": true,
+        "git remote": true,
+        "gh": true,
+        "git commit": true,
+        "git push": true
     }
 }

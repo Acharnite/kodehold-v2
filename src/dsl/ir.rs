@@ -56,6 +56,7 @@ pub struct IrFunction {
     pub name: String,
     pub params: Vec<IrParam>,
     pub return_type: String,
+    #[allow(dead_code)]
     pub constraints: Vec<String>,
 }
 

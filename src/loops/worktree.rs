@@ -217,6 +217,7 @@ impl WorktreeManager {
     }
 
     /// Check if a worktree has uncommitted changes.
+    #[allow(dead_code)]
     pub fn has_changes(&self, path: &Path) -> anyhow::Result<bool> {
         let output = std::process::Command::new("git")
             .args([
