@@ -5,6 +5,7 @@ mod cmd;
 mod config;
 mod dsl;
 mod events;
+mod loops;
 mod pipeline;
 mod plugin;
 mod solver;
@@ -26,6 +27,7 @@ fn main() {
         cli::Command::Spec(cmd) => cmd::spec::run(cmd),
         cli::Command::Migrate(cmd) => cmd::migrate::run_migrate(cmd),
         cli::Command::Bridge(cmd) => cmd::migrate::run_bridge(cmd),
+        cli::Command::Loop(cmd) => cmd::loops::run(cmd),
     };
     if let Err(e) = result {
         eprintln!("error: {e}");

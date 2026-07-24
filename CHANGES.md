@@ -1,5 +1,35 @@
 # Changelog
 
+## 2.0.0 — 2026-07-24
+
+### Breaking — v1.0 Removal
+- **All Python code deleted** — `scripts/` (gate.py, ship.py, workspace.py, discord-notify.py, detect_test_framework.py, lib/output.py), `tests/` (conftest.py, all test_*.py, run.sh), and all `.py` dependencies removed.
+- **v1 config deleted** — `config/tasks.yaml` (team workflows), `config/crontab.kodehold` (cron loop definitions).
+- **Loop infrastructure deleted** — `LOOP.md`, `STATE.md`, `loop-budget.md`, `loop-constraints.md`, `loop-run-log.md`, `skills/` (loop-budget, loop-constraints, loop-triage).
+- **v1 documentation deleted** — `docs/impact-analysis-memoir-restructure.md`, `docs/reports/slug-migration.json`.
+- **`requirements.txt` deleted** — no more Python dependencies.
+
+### Added
+- **ADRs 0001-0009 promoted to Accepted** — all nine architecture decisions now ratified.
+- **ADR-0001 updated** — V1.0 Coexistence section replaced with V1.0 Removal notes.
+- **ADR-0010: Loop Daemon for Continuous Maintenance** — Proposed. New subsystem for
+  continuous workspace maintenance, feature request processing, and git worktree
+  isolation.
+- **Loops system (`kodehold loop`)** — Loop engine daemon with feature lifecycle
+  management. Subcommands: `start` (daemon/single-shot), `feature` (create request),
+  `list` (features + worktrees), `maintain`, `prune`. Uses git worktrees for
+  isolated feature development in `.kodehold/worktrees/`. Feature requests stored
+  as YAML in `.kodehold/features/`. Supports merge strategies (merge/rebase/squash).
+  Integrates with event system (GitHub issues → feature requests, webhook-triggered
+  cycles).
+
+### Changed
+- **Cargo.toml** — bumped to v2.0.0.
+- **VERSION.md** — bumped to v2.0.0 with abbreviated history.
+- **docs/design/README.md** — updated version to 2.0.0, removed v1 coexistence references.
+- **opencode.json** — removed v1 loop-triage/implementer/verifier agents.
+- **AGENTS.md** — simplified to bare safety rules for v2 development.
+
 ## 1.24.0 — 2026-07-22
 
 ### Added

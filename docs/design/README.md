@@ -1,15 +1,15 @@
 # KodeHold v2.0 — Design Document
-**Version:** 0.2.0
+**Version:** 2.0.0
 **Status:** Active
-**Design Authority:** Architects
-**Last Reviewed:** 2026-07-23
-**Origin:** Forked from kodehold v1.25.0
+**Last Reviewed:** 2026-07-24
 
-> KodeHold v2.0 is a fundamental redesign. V1.0 simulates a human software organization
-> (Director + 6 teams). V2.0 replaces that metaphor with machine-native patterns:
-> compiler pipelines, constraint solvers, event-driven dispatch, and a DSL for
-> software specification. The goal: deterministic, auditable, token-efficient
-> code generation where AI is a tool, not a persona.
+> KodeHold v2.0 is a specification compiler and code generation toolchain.
+> It uses compiler pipelines, constraint solvers, event-driven dispatch, and
+> a DSL for software specification. The goal: deterministic, auditable,
+> token-efficient code generation where AI is a tool, not a persona.
+>
+> All v1.0 Python code (team-simulation agents, marker-file gates, cron loops)
+> has been removed as of v2.0.0. KodeHold is now a pure Rust single binary.
 
 ## 1. Purpose & Scope
 
@@ -33,9 +33,9 @@ to code.
 
 ### Scope
 
-V2.0 covers the entire lifecycle: spec → generate → verify → ship. It does not
-replace v1.0 — both coexist during development. V1.0 continues to manage the
-workspace where v2.0 is built.
+V2.0 covers the entire lifecycle: spec → generate → verify → ship. All v1.0
+code (Python scripts, agent loops, marker-file state machines) has been removed.
+This is the only KodeHold.
 
 ## 2. Requirements
 
@@ -246,7 +246,142 @@ test "trending_up": classify(mock_trending_up()) == Regime::Trending
 }
 ```
 
-## 6. API Design
+## 6. Loops System — Continuous Workspace Maintenance
+
+### 6.1 Overview
+
+The Loops system extends KodeHold with a continuous improvement daemon that
+proactively maintains workspaces and implements feature requests. It uses git
+branches and linked worktrees to isolate work, and follows the existing
+pipeline model for implementation.
+
+```
+                     ┌──────────────────────────┐
+                     │   Feature Requests        │
+                     │   (.kodehold/features/)   │
+                     └──────────┬───────────────┘
+                                │ discover (each cycle)
+                                ▼
+                     ┌──────────────────────────┐
+                     │   Loop Engine             │
+                     │   ┌──────────────────┐   │
+                     │   │ 1. Discover      │   │
+                     │   │ 2. Start work    │───┼──→ Create branch + worktree
+                     │   │ 3. Verify        │───┼──→ Run pipeline in worktree
+                     │   │ 4. Merge         │───┼──→ Merge → prune
+                     │   │ 5. Maintain      │───┼──→ Verify main, git gc
+                     │   │ 6. Prune         │   │
+                     │   └──────────────────┘   │
+                     └──────────────────────────┘
+                                │
+            ┌───────────────────┼───────────────────┐
+            ▼                   ▼                   ▼
+     ┌────────────┐     ┌────────────┐     ┌────────────┐
+     │ Worktree 1 │     │ Worktree 2 │     │ Worktree 3 │
+     │ feature/A  │     │ feature/B  │     │ feature/C  │
+     └────────────┘     └────────────┘     └────────────┘
+```
+
+### 6.2 Feature Lifecycle
+
+```
+Pending ──→ InProgress ──→ ReadyForReview ──→ Approved ──→ Merged
+                │                                    │
+                └─── (pipeline runs)                  └─── (auto or manual)
+     Cancelled ←──────────────────────────────────────────
+```
+
+1. **Pending** — Feature request is filed (CLI, GitHub issue, or local file)
+2. **InProgress** — Worktree created, branch `feature/<name>` checked out
+3. **ReadyForReview** — Pipeline passed in the worktree
+4. **Approved** — Human reviewed (or auto-merge enabled)
+5. **Merged** — Merged into main, worktree removed, branch deleted
+6. **Cancelled** — Abandoned feature cleaned up
+
+### 6.3 Feature Request Format
+
+Feature requests are YAML files stored in `.kodehold/features/`:
+
+```yaml
+name: add-auth
+title: Add JWT authentication
+description: |
+  Implement JWT-based authentication for the API.
+  Tokens should expire after 1 hour and support refresh.
+acceptance:
+  - Tokens expire after 1 hour
+  - Refresh tokens are supported
+  - All endpoints validate tokens
+source: Cli
+status: Pending
+labels:
+  - enhancement
+  - security
+priority: P1
+```
+
+### 6.4 Git Worktree Strategy
+
+Each feature gets its own isolated workspace via `git worktree`:
+
+```
+main branch
+  │
+  ├── feature/add-auth  (linked worktree: .kodehold/worktrees/add-auth/)
+  ├── feature/refactor  (linked worktree: .kodehold/worktrees/refactor/)
+  └── feature/fix-bug   (linked worktree: .kodehold/worktrees/fix-bug/)
+```
+
+Benefits:
+- Main workspace stays clean (no branch switching)
+- Multiple features can be developed concurrently
+- Pipeline runs in isolation per feature
+- Easy to discard failed experiments (just remove worktree + branch)
+
+### 6.5 Loop CLI Commands
+
+```
+kodehold loop start [--once] [--interval <sec>]   Start daemon or single cycle
+kodehold loop feature <name> --title <title>       Create a feature request
+kodehold loop list                                  List features + worktrees
+kodehold loop maintain                              Run maintenance cycle
+kodehold loop prune                                 Clean abandoned worktrees
+```
+
+### 6.6 Loop Configuration (in kodehold.yaml)
+
+```yaml
+loops:
+  features_dir: .kodehold/features/
+  worktrees_dir: .kodehold/worktrees/
+  auto_maintain: true
+  maintain_interval_secs: 3600
+  merge_strategy: merge          # merge | rebase | squash
+  auto_merge: false
+  max_concurrent_features: 3
+  auto_labels:
+    - auto
+```
+
+### 6.7 Event-Driven Loop
+
+The event system can trigger loop cycles:
+
+```
+GitHub issue opened → CreateFeatureFromIssue → processed on next cycle
+POST /hooks/loop    → manual loop trigger
+schedule event      → periodic loop cycle
+```
+
+### 6.8 Merge Strategies
+
+| Strategy | Behavior | Use Case |
+|----------|----------|----------|
+| `merge` | `git merge --no-ff` | Preserves feature branch history |
+| `rebase` | Rebase + fast-forward | Clean linear history |
+| `squash` | Squash all commits | Single commit per feature |
+
+## 7. API Design
 
 ### CLI (primary interface)
 
@@ -261,6 +396,7 @@ All output: JSON lines to stdout, logs to stderr. `--json` for machine-readable.
 ```
 POST /hooks/github       GitHub webhook endpoint
 POST /hooks/gitlab       GitLab webhook endpoint
+POST /hooks/loop         Trigger a loop cycle
 GET  /health             Health check
 GET  /api/v1/workspaces  List workspaces
 GET  /api/v1/workspaces/:name/state
@@ -277,7 +413,7 @@ exit 0: success
 exit non-zero: failure (pipeline aborts)
 ```
 
-## 7. Implementation Plan
+## 8. Implementation Plan
 
 ### Phase 1: Core Binary (ADR-0008)
 - Rust project setup, CLI framework (clap)
@@ -298,6 +434,14 @@ exit non-zero: failure (pipeline aborts)
 
 ### Phase 5: DSL (ADR-0009)
 - khold language parser
+
+### Phase 6: Loops (ADR-0010)
+- Loop engine daemon with feature lifecycle management
+- Git worktree isolation for concurrent feature development
+- Feature request system (CLI + GitHub issues + local files)
+- Merge strategies (merge, rebase, squash)
+- Scheduled maintenance cycles (verify, gc, prune)
+- Integration with event system for webhook-triggered cycles
 - Spec → IR → code compilation
 - Executable spec integration (ADR-0004)
 

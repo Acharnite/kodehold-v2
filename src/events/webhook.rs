@@ -2,7 +2,7 @@ use axum::{
     extract::State,
     http::{HeaderMap, StatusCode},
     routing::post,
-    Json, Router,
+    Router,
 };
 use hmac::{Hmac, Mac};
 use sha2::Sha256;
@@ -22,8 +22,26 @@ pub fn router(dispatcher: Dispatcher, secret: Option<String>) -> Router {
 
     Router::new()
         .route("/hooks/github", post(handle_github))
+        .route("/hooks/loop", post(handle_loop_trigger))
         .route("/health", post(|| async { StatusCode::OK }))
         .with_state(state)
+}
+
+async fn handle_loop_trigger(
+    State(state): State<Arc<WebhookState>>,
+) -> (StatusCode, &'static str) {
+    let event = Event::new(
+        crate::events::EventSource::GitHubWebhook,
+        "schedule",
+        serde_json::json!({"trigger": "manual_loop"}),
+    );
+    match state.dispatcher.dispatch(&event) {
+        Ok(_) => (StatusCode::OK, "loop cycle triggered"),
+        Err(e) => {
+            eprintln!("loop trigger dispatch error: {e}");
+            (StatusCode::INTERNAL_SERVER_ERROR, "dispatch error")
+        }
+    }
 }
 
 async fn handle_github(

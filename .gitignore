@@ -22,3 +22,6 @@ workspaces/opencode-rag
 
 # Loop webhook secret
 config/loop-webhook.txt
+
+# Rust build artifacts
+target/

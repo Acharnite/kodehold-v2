@@ -331,3 +331,188 @@ fn test_pattern_search() {
     assert!(stdout.contains("regime-classifier"), "should find pattern: {stdout}");
 }
 
+// ── Loop integration tests ──
+
+#[test]
+fn test_loop_feature_create_and_list() {
+    let tmp = tempfile::tempdir().unwrap();
+    let dir = tmp.path();
+
+    // Init a workspace
+    Command::new(kodehold_bin())
+        .args(["init", "loop-test"])
+        .current_dir(dir)
+        .output()
+        .expect("failed to run init");
+
+    let project = dir.join("loop-test");
+
+    // Create a feature request via CLI
+    let output = Command::new(kodehold_bin())
+        .args([
+            "loop",
+            "feature",
+            "add-auth",
+            "--title", "Add authentication",
+            "--description", "Implement JWT-based auth",
+            "--priority", "P1",
+            "--label", "enhancement",
+            "--path", project.to_str().unwrap(),
+        ])
+        .output()
+        .expect("failed to create feature");
+
+    assert!(output.status.success(), "feature create failed: {}", String::from_utf8_lossy(&output.stderr));
+    let stdout = String::from_utf8_lossy(&output.stdout);
+    assert!(stdout.contains("add-auth"), "feature not created: {stdout}");
+
+    // Verify the feature file was created
+    let feature_path = project.join(".kodehold").join("features").join("add-auth.yaml");
+    assert!(feature_path.exists(), "feature yaml not created at {}", feature_path.display());
+
+    // List features
+    let output = Command::new(kodehold_bin())
+        .args(["loop", "list", "--path", project.to_str().unwrap()])
+        .output()
+        .expect("failed to list features");
+
+    assert!(output.status.success());
+    let stdout = String::from_utf8_lossy(&output.stdout);
+    assert!(stdout.contains("add-auth"), "feature not listed: {stdout}");
+    assert!(stdout.contains("P1"), "priority not shown: {stdout}");
+}
+
+#[test]
+fn test_loop_start_single_cycle() {
+    let tmp = tempfile::tempdir().unwrap();
+    let dir = tmp.path();
+
+    Command::new(kodehold_bin())
+        .args(["init", "loop-cycle"])
+        .current_dir(dir)
+        .output()
+        .expect("failed to run init");
+
+    let project = dir.join("loop-cycle");
+
+    // Create a feature request
+    Command::new(kodehold_bin())
+        .args([
+            "loop",
+            "feature",
+            "test-feat",
+            "--title", "Test feature",
+            "--description", "A feature for testing",
+            "--priority", "P0",  // P0 is auto-processed
+            "--path", project.to_str().unwrap(),
+        ])
+        .output()
+        .expect("failed to create feature");
+
+    // Run a single loop cycle
+    let output = Command::new(kodehold_bin())
+        .args([
+            "loop",
+            "start",
+            "--once",
+            "--path", project.to_str().unwrap(),
+        ])
+        .output()
+        .expect("failed to run loop cycle");
+
+    let stdout = String::from_utf8_lossy(&output.stdout);
+    assert!(output.status.success(), "loop cycle failed: {stdout}");
+}
+
+#[test]
+fn test_loop_maintain() {
+    let tmp = tempfile::tempdir().unwrap();
+    let dir = tmp.path();
+
+    Command::new(kodehold_bin())
+        .args(["init", "loop-maint"])
+        .current_dir(dir)
+        .output()
+        .expect("failed to run init");
+
+    let project = dir.join("loop-maint");
+
+    let output = Command::new(kodehold_bin())
+        .args(["loop", "maintain", "--path", project.to_str().unwrap()])
+        .output()
+        .expect("failed to run maintain");
+
+    assert!(output.status.success(), "maintain failed: {}", String::from_utf8_lossy(&output.stdout));
+    let stdout = String::from_utf8_lossy(&output.stdout);
+    assert!(stdout.contains("complete"), "no complete message: {stdout}");
+}
+
+#[test]
+fn test_loop_json_output() {
+    let tmp = tempfile::tempdir().unwrap();
+    let dir = tmp.path();
+
+    Command::new(kodehold_bin())
+        .args(["init", "loop-json"])
+        .current_dir(dir)
+        .output()
+        .expect("failed to run init");
+
+    let project = dir.join("loop-json");
+
+    // Create feature with JSON output
+    let output = Command::new(kodehold_bin())
+        .args([
+            "loop",
+            "--json",
+            "feature",
+            "json-feat",
+            "--title", "JSON feature",
+            "--path", project.to_str().unwrap(),
+        ])
+        .output()
+        .expect("failed to create feature");
+
+    assert!(output.status.success());
+    let stdout = String::from_utf8_lossy(&output.stdout);
+    let parsed: serde_json::Value = serde_json::from_str(&stdout).expect("invalid JSON output");
+    assert_eq!(parsed["status"], "ok");
+    assert_eq!(parsed["feature"], "json-feat");
+}
+
+#[test]
+fn test_loop_feature_with_acceptance_criteria() {
+    let tmp = tempfile::tempdir().unwrap();
+    let dir = tmp.path();
+
+    Command::new(kodehold_bin())
+        .args(["init", "loop-accept"])
+        .current_dir(dir)
+        .output()
+        .expect("failed to run init");
+
+    let project = dir.join("loop-accept");
+
+    // Create a feature with multiple acceptance criteria
+    let output = Command::new(kodehold_bin())
+        .args([
+            "loop",
+            "feature",
+            "accept-test",
+            "--title", "Acceptance test",
+            "--accept", "Criterion one",
+            "--accept", "Criterion two",
+            "--path", project.to_str().unwrap(),
+        ])
+        .output()
+        .expect("failed to create feature");
+
+    assert!(output.status.success());
+
+    // Read the feature yaml and verify acceptance criteria
+    let feature_path = project.join(".kodehold").join("features").join("accept-test.yaml");
+    let content = std::fs::read_to_string(&feature_path).unwrap();
+    assert!(content.contains("Criterion one"), "first criterion missing: {content}");
+    assert!(content.contains("Criterion two"), "second criterion missing: {content}");
+}
+

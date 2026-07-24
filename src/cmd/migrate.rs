@@ -1,6 +1,5 @@
 use crate::cli::{BridgeArgs, BridgeCommand, MigrateArgs};
 use crate::state;
-use crate::workspace::Workspace;
 
 pub fn run_migrate(args: MigrateArgs) -> anyhow::Result<()> {
     let path = args

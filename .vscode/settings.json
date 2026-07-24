@@ -3,6 +3,8 @@
         "/^cd /mnt/c/Users/kiffe/git/kodehold && python3 -m pytest tests/ -x -v 2>&1 \\| tail -60$/": {
             "approve": true,
             "matchCommandLine": true
-        }
+        },
+        "cargo test": true,
+        "git add": true
     }
 }

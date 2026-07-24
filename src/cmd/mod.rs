@@ -1,5 +1,6 @@
 pub mod init;
 pub mod listen;
+pub mod loops;
 pub mod migrate;
 pub mod pattern;
 pub mod pipeline;

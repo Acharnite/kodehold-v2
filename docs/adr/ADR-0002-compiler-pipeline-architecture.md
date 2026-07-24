@@ -10,7 +10,7 @@ phase:
 
 ## Status
 
-Proposed
+Accepted
 
 ## Context
 

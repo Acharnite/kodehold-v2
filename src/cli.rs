@@ -27,10 +27,12 @@ pub enum Command {
     Plugin(PluginArgs),
     /// Compile a .khold specification file
     Spec(SpecArgs),
-    /// Migrate from v1.0 or delegate to v1.0 tools
+    /// Migrate from legacy .kodehold-state projects
     Migrate(MigrateArgs),
-    /// Bridge to v1.0 tools
+    /// Bridge to legacy tools (gate integration)
     Bridge(BridgeArgs),
+    /// Manage the loop daemon for continuous workspace maintenance
+    Loop(LoopArgs),
 }
 
 #[derive(clap::Args)]
@@ -242,4 +244,85 @@ pub enum BridgeCommand {
         /// Transition name (e.g., INIT_TO_ACTIVE)
         transition: String,
     },
+}
+
+#[derive(clap::Args)]
+pub struct LoopArgs {
+    #[command(subcommand)]
+    pub command: LoopCommand,
+    /// Output as JSON
+    #[arg(long)]
+    pub json: bool,
+}
+
+#[derive(clap::Subcommand)]
+pub enum LoopCommand {
+    /// Start the loop daemon (or run a single cycle)
+    Start(LoopStartArgs),
+    /// Create a new feature request
+    Feature(LoopFeatureArgs),
+    /// List feature requests and active worktrees
+    List(LoopListArgs),
+    /// Run a single maintenance cycle
+    Maintain(LoopMaintainArgs),
+    /// Prune abandoned worktrees
+    Prune(LoopPruneArgs),
+}
+
+#[derive(clap::Args)]
+pub struct LoopStartArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short = 'P', long)]
+    pub path: Option<String>,
+    /// Run a single cycle and exit (instead of daemon mode)
+    #[arg(long)]
+    pub once: bool,
+    /// Sleep interval between cycles in seconds (default: 60)
+    #[arg(short, long)]
+    pub interval: Option<u64>,
+}
+
+#[derive(clap::Args)]
+pub struct LoopFeatureArgs {
+    /// Feature name (used as branch/worktree name)
+    pub name: String,
+    /// Feature title / short description
+    #[arg(short, long)]
+    pub title: String,
+    /// Detailed description
+    #[arg(short, long)]
+    pub description: Option<String>,
+    /// Acceptance criteria (can be specified multiple times)
+    #[arg(short = 'A', long = "accept")]
+    pub accept: Vec<String>,
+    /// Priority (P0/P1/P2/P3, default: P2)
+    #[arg(short, long)]
+    pub priority: Option<String>,
+    /// Labels (can be specified multiple times)
+    #[arg(short = 'L', long = "label")]
+    pub label: Vec<String>,
+    /// Project path (defaults to current directory)
+    #[arg(short = 'P', long)]
+    pub path: Option<String>,
+}
+
+#[derive(clap::Args)]
+pub struct LoopListArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short = 'P', long)]
+    pub path: Option<String>,
+}
+
+#[derive(clap::Args)]
+pub struct LoopMaintainArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short = 'P', long)]
+    pub path: Option<String>,
+}
+
+#[derive(clap::Args)]
+pub struct LoopPruneArgs {
+    /// Project path (defaults to current directory)
+    #[arg(short = 'P', long)]
+    pub path: Option<String>,
 }

@@ -45,7 +45,8 @@ pub fn run(args: ListenArgs) -> anyhow::Result<()> {
         let listener = tokio::net::TcpListener::bind(&addr).await.unwrap();
         eprintln!("  ✓ listening on http://{addr}");
         eprintln!("  endpoints:");
-        eprintln!("    POST /hooks/github  — GitHub webhook");
+        eprintln!("    POST /hooks/github  — GitHub webhook (push, PR, issues)");
+        eprintln!("    POST /hooks/loop    — Trigger a loop cycle");
         eprintln!("    GET  /health        — health check");
         eprintln!();
         eprintln!("  Press Ctrl+C to stop");

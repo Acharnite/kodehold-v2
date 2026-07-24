@@ -1,23 +1,17 @@
-# AGENTS.md — Opencode Minimal Loop
+# AGENTS.md — KodeHold v2.0 Development Rules
 
-These rules are loaded by opencode before loop work.
-
-## Loop Mode
-
-- Start in L1 report-only mode.
-- Read `STATE.md` before any triage.
-- Update `STATE.md` after every loop run.
-- Do not edit source code until the human explicitly enables L2.
+These rules are loaded by opencode before work begins.
 
 ## Safety
 
 - Never push or merge without human approval.
 - Never edit `.env`, `.env.*`, `auth/`, `payments/`, `secrets/`, or `credentials/`.
-- Use a git worktree for every code-changing attempt.
+- Run `cargo test` before proposing any fix.
 - Max 3 fix attempts per item; escalate after that.
 
-## Verification
+## Development
 
-- For L2+ changes, dispatch a verifier sub-agent after implementation.
-- Run the project's documented tests before proposing a fix.
-- Record test evidence in `STATE.md`.
+- This is a Rust single-binary project. No Python, no scripts/ directory.
+- All state lives in git tags (v2-init, v2-active, v2-review, v2-closed).
+- Use `cargo build` to compile, `cargo test` to verify.
+- ADRs are in `docs/adr/`, design doc is `docs/design/README.md`.

@@ -2,7 +2,7 @@ use std::path::Path;
 use std::sync::mpsc;
 use std::time::{Duration, Instant};
 
-use notify::{Config, Event, EventKind, RecursiveMode, Watcher as NotifyWatcher};
+use notify::{Event, RecursiveMode, Watcher as NotifyWatcher};
 
 use crate::events::{Dispatcher, Event as KodeholdEvent, EventSource};
 

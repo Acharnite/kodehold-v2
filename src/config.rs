@@ -9,6 +9,8 @@ pub struct Config {
     pub pipeline: PipelineConfig,
     #[serde(default)]
     pub hooks: crate::plugin::HookConfig,
+    #[serde(default)]
+    pub loops: crate::loops::LoopConfig,
 }
 
 #[derive(Debug, Clone, Default, Serialize, Deserialize)]
@@ -48,6 +50,7 @@ impl Config {
                 post_verify: None,
                 on_ship: None,
             },
+            loops: crate::loops::LoopConfig::default(),
         }
     }
 

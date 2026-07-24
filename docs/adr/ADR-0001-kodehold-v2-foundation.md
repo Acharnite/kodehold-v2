@@ -76,12 +76,27 @@ We establish 8 design directions for v2.0. Each is documented in its own ADR:
 5. **Specification over Delegation**: Describe what you want, don't negotiate
    with agents about how to build it.
 
-### V1.0 Coexistence
+### V1.0 Removal
 
-V1.0 is NOT deprecated. It continues to manage all existing workspaces. V2.0
-is built inside a v1.0 workspace. When v2.0 reaches feature parity with v1.0's
-core workflows, a migration path will be defined. Until then, both versions
-operate independently.
+As of v2.0.0, all v1.0 Python code (`scripts/`, `tests/`, config files, loop
+infrastructure) has been **removed**. KodeHold is now a pure Rust single-binary
+tool. There is no more Python, no more team-simulation agents, no more
+marker-file state machines, and no more cron-based loop infrastructure.
+
+The Rust codebase (`src/`) is the only code. The v2.0 pipeline, DSL, constraint
+solver, event system, and plugin architecture are the entire project.
+
+Key removals:
+- **Python scripts** — `gate.py`, `ship.py`, `workspace.py`, `discord-notify.py`,
+  `detect_test_framework.py`, and `lib/output.py`
+- **Python test suite** — `tests/conftest.py`, `test_gate_*.py`, `test_ship_gate.py`,
+  `test_smoke_scripts.py`, `test_workspace_manager.py`, `run.sh`
+- **v1 config** — `config/tasks.yaml`, `config/crontab.kodehold`
+- **Loop infrastructure** — `LOOP.md`, `STATE.md`, `loop-budget.md`,
+  `loop-constraints.md`, `loop-run-log.md`, `skills/`
+- **v1 documentation** — `docs/impact-analysis-memoir-restructure.md`,
+  `docs/reports/slug-migration.json`
+- **Python dependencies** — `requirements.txt`
 
 ## Consequences
 
@@ -99,16 +114,11 @@ operate independently.
   intuitive — is gone
 - The DSL spec language is a new thing to learn
 - Pattern database needs seeding before the solver is useful
-- Rust development velocity is slower than Python for prototyping
-- Two versions to maintain during the transition period
-
 ### Risks
 
 - **Pattern DB cold start**: Until the known-patterns database has sufficient
   coverage, most tasks will fall back to AI, negating the solver benefit.
-  Mitigation: seed with patterns from kodehold v1.0's existing workspaces.
+  Mitigation: seed with common implementation patterns.
 - **DSL expressiveness**: If the spec language can't express real-world
   requirements, users will bypass it. Mitigation: start minimal, expand based
   on real usage.
-- **V1.0 abandonment**: If v2.0 takes too long to become useful, momentum may
-  be lost. Mitigation: ship Phase 1 (core binary) within 4 weeks.

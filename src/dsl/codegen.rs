@@ -1,6 +1,6 @@
 use std::path::Path;
 
-use crate::dsl::ir::{IrFunction, IrInterface, IrModule, IrType, IrVariant};
+use crate::dsl::ir::{IrModule, IrType};
 
 pub fn generate(module: &IrModule, output_dir: &Path) -> anyhow::Result<Vec<String>> {
     let mut files = Vec::new();

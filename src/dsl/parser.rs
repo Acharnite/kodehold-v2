@@ -370,7 +370,7 @@ impl Parser {
         self.src[start..self.pos].iter().collect()
     }
 
-    fn parse_until(&mut self, delimiter: char) -> String {
+    fn parse_until(&mut self, _delimiter: char) -> String {
         let start = self.pos;
         let mut depth = 1;
         while let Some(c) = self.peek() {
