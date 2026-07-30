@@ -52,7 +52,7 @@ jobs:
         run: cargo test
 
       - name: Upload binary artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: kodehold-${{ matrix.os }}
           path: target/${{ matrix.target }}/release/${{ matrix.binary_name }}
